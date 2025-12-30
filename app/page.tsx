@@ -31,9 +31,9 @@ export default function Home() {
               </a>
               <a
                 className="text-sm font-medium text-gray-300 hover:text-white transition-colors"
-                href="#reviews"
+                href="#benefits"
               >
-                Reviews
+                Benefits
               </a>
             </nav>
 
@@ -200,51 +200,82 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Stats / Trust Section */}
-      <section className="border-y border-[#232f48] bg-[#0a0e17]" id="reviews">
-        <div className="max-w-[1280px] mx-auto px-4 py-8">
-          <div className="flex flex-wrap justify-between items-center gap-8">
-            {/* Rating Widget */}
-            <div className="flex items-center gap-6">
-              <div className="flex flex-col">
-                <div className="flex items-end gap-3">
-                  <span className="text-4xl font-black text-gradient">4.9</span>
-                  <div className="flex text-[#feca57] pb-2">
-                    <span className="material-symbols-outlined fill-current">
-                      star
-                    </span>
-                    <span className="material-symbols-outlined fill-current">
-                      star
-                    </span>
-                    <span className="material-symbols-outlined fill-current">
-                      star
-                    </span>
-                    <span className="material-symbols-outlined fill-current">
-                      star
-                    </span>
-                    <span className="material-symbols-outlined fill-current">
-                      star_half
-                    </span>
-                  </div>
-                </div>
-                <p className="text-gray-400 text-sm">
-                  Based on 2,400+ Chrome Store reviews
-                </p>
+      {/* Value / Benefits */}
+      <section className="relative py-20 overflow-hidden" id="benefits">
+        {/* subtle glows (same palette) */}
+        <div className="absolute -top-40 -left-40 w-[520px] h-[520px] bg-[#135bec] rounded-full blur-[160px] opacity-[0.08] pointer-events-none" />
+        <div className="absolute -bottom-40 -right-40 w-[520px] h-[520px] bg-[#feca57] rounded-full blur-[160px] opacity-[0.06] pointer-events-none" />
+
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="mb-14 text-center max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-5xl font-bold mb-5">
+              Value / <span className="text-gradient">Benefits</span>
+            </h2>
+            <p className="text-gray-400 text-lg">
+              The “try before you buy” advantage—built for confidence and fewer
+              returns.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {/* Card 1 */}
+            <div className="group rounded-full aspect-square bg-[#111722] border border-[#232f48] p-6 sm:p-8 md:p-10 flex flex-col items-center justify-center text-center hover:border-[#feca57]/30 transition-all hover:translate-y-[-4px]">
+              <div className="w-16 h-16 rounded-full bg-[#192233] flex items-center justify-center mb-5 group-hover:bg-gradient-brand transition-colors duration-300">
+                <span className="material-symbols-outlined text-white text-3xl">
+                  verified
+                </span>
               </div>
+              <h3 className="text-base sm:text-lg md:text-xl font-bold mb-2 text-white">
+                Shop with confidence
+              </h3>
+              <p className="text-gray-400 text-sm sm:text-base leading-relaxed max-w-[18ch]">
+                See the look on you first.
+              </p>
             </div>
 
-            {/* Partner Logos */}
-            <div className="flex flex-wrap gap-8 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
-              <span className="text-xl font-bold font-display">
-                FASHION<span className="font-light">NOVA</span>
-              </span>
-              <span className="text-xl font-bold font-display italic">
-                ASOS
-              </span>
-              <span className="text-xl font-bold font-display">ZARA</span>
-              <span className="text-xl font-bold font-display tracking-widest">
-                H&amp;M
-              </span>
+            {/* Card 2 */}
+            <div className="group rounded-full aspect-square bg-[#111722] border border-[#232f48] p-6 sm:p-8 md:p-10 flex flex-col items-center justify-center text-center hover:border-[#135bec]/30 transition-all hover:translate-y-[-4px]">
+              <div className="w-16 h-16 rounded-full bg-[#192233] flex items-center justify-center mb-5 group-hover:bg-gradient-brand transition-colors duration-300">
+                <span className="material-symbols-outlined text-white text-3xl">
+                  assignment_return
+                </span>
+              </div>
+              <h3 className="text-base sm:text-lg md:text-xl font-bold mb-2 text-white">
+                Reduce returns
+              </h3>
+              <p className="text-gray-400 text-sm sm:text-base leading-relaxed max-w-[18ch]">
+                Fewer surprises at delivery.
+              </p>
+            </div>
+
+            {/* Card 3 */}
+            <div className="group rounded-full aspect-square bg-[#111722] border border-[#232f48] p-6 sm:p-8 md:p-10 flex flex-col items-center justify-center text-center hover:border-[#ff6b6b]/30 transition-all hover:translate-y-[-4px]">
+              <div className="w-16 h-16 rounded-full bg-[#192233] flex items-center justify-center mb-5 group-hover:bg-gradient-brand transition-colors duration-300">
+                <span className="material-symbols-outlined text-white text-3xl">
+                  auto_fix_high
+                </span>
+              </div>
+              <h3 className="text-base sm:text-lg md:text-xl font-bold mb-2 text-white">
+                Stop guessing looks
+              </h3>
+              <p className="text-gray-400 text-sm sm:text-base leading-relaxed max-w-[18ch]">
+                Know before you buy.
+              </p>
+            </div>
+
+            {/* Card 4 */}
+            <div className="group rounded-full aspect-square bg-[#111722] border border-[#232f48] p-6 sm:p-8 md:p-10 flex flex-col items-center justify-center text-center hover:border-[#feca57]/30 transition-all hover:translate-y-[-4px]">
+              <div className="w-16 h-16 rounded-full bg-[#192233] flex items-center justify-center mb-5 group-hover:bg-gradient-brand transition-colors duration-300">
+                <span className="material-symbols-outlined text-white text-3xl">
+                  checkroom
+                </span>
+              </div>
+              <h3 className="text-base sm:text-lg md:text-xl font-bold mb-2 text-white">
+                Suits you
+              </h3>
+              <p className="text-gray-400 text-sm sm:text-base leading-relaxed max-w-[18ch]">
+                Buy what actually fits your style.
+              </p>
             </div>
           </div>
         </div>
