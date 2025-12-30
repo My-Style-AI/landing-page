@@ -212,7 +212,7 @@ export default function Home() {
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="mb-14 text-center max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-5xl font-bold mb-5">
-              Value / <span className="text-gradient">Benefits</span>
+              How It <span className="text-gradient">Benefits You</span>
             </h2>
             <p className="text-gray-400 text-lg">
               The “try before you buy” advantage—built for confidence and fewer
@@ -220,7 +220,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
             {/* Tile 1 */}
             <div className="group rounded-xl bg-[#111722] border border-[#232f48] p-6 hover:border-[#feca57]/30 transition-all hover:translate-y-[-4px]">
               <div className="flex items-start gap-4">
@@ -234,7 +234,8 @@ export default function Home() {
                     Shop with Confidence
                   </h3>
                   <p className="text-gray-400 leading-relaxed">
-                    See the look on you first—then decide.
+                    See the look on you before you buy, so you feel confident
+                    checking out.
                   </p>
                 </div>
               </div>
@@ -253,7 +254,8 @@ export default function Home() {
                     Reduce Returns
                   </h3>
                   <p className="text-gray-400 leading-relaxed">
-                    Better decisions, fewer surprises at delivery.
+                    Make smarter picks upfront with fewer “doesn’t fit / doesn’t
+                    suit me” surprises.
                   </p>
                 </div>
               </div>
@@ -272,7 +274,8 @@ export default function Home() {
                     Stop Guessing Looks
                   </h3>
                   <p className="text-gray-400 leading-relaxed">
-                    Know what works with your body and vibe.
+                    Instantly preview how the outfit works with your body,
+                    lighting, and vibe.
                   </p>
                 </div>
               </div>
@@ -291,7 +294,48 @@ export default function Home() {
                     Buy What Actually Suits You
                   </h3>
                   <p className="text-gray-400 leading-relaxed">
-                    Pick pieces that match your shape and style.
+                    Choose pieces that flatter your shape and match your
+                    personal style—on purpose.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Tile 5 */}
+            <div className="group rounded-xl bg-[#111722] border border-[#232f48] p-6 hover:border-[#135bec]/30 transition-all hover:translate-y-[-4px]">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-lg bg-[#192233] flex items-center justify-center group-hover:bg-gradient-brand transition-colors duration-300 shrink-0">
+                  <span className="material-symbols-outlined text-white text-[28px]">
+                    schedule
+                  </span>
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-white mb-1">
+                    Save Time Shopping
+                  </h3>
+                  <p className="text-gray-400 leading-relaxed">
+                    Compare looks in seconds and move on fast—no more endless
+                    tabs and second-guessing.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Tile 6 */}
+            <div className="group rounded-xl bg-[#111722] border border-[#232f48] p-6 hover:border-[#feca57]/30 transition-all hover:translate-y-[-4px]">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-lg bg-[#192233] flex items-center justify-center group-hover:bg-gradient-brand transition-colors duration-300 shrink-0">
+                  <span className="material-symbols-outlined text-white text-[28px]">
+                    lock
+                  </span>
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-white mb-1">
+                    Privacy-First by Design
+                  </h3>
+                  <p className="text-gray-400 leading-relaxed">
+                    Your photo stays yours—designed to keep your try-ons private
+                    while you browse.
                   </p>
                 </div>
               </div>
