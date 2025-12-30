@@ -201,7 +201,10 @@ export default function Home() {
       </section>
 
       {/* Value / Benefits */}
-      <section className="relative py-20 overflow-hidden" id="benefits">
+      <section
+        className="py-24 bg-[#0a0e17] relative overflow-hidden"
+        id="benefits"
+      >
         {/* subtle glows (same palette) */}
         <div className="absolute -top-40 -left-40 w-[520px] h-[520px] bg-[#135bec] rounded-full blur-[160px] opacity-[0.08] pointer-events-none" />
         <div className="absolute -bottom-40 -right-40 w-[520px] h-[520px] bg-[#feca57] rounded-full blur-[160px] opacity-[0.06] pointer-events-none" />
