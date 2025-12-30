@@ -220,65 +220,81 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {/* Card 1 */}
-            <div className="group rounded-full aspect-square bg-[#111722] border border-[#232f48] p-6 sm:p-8 md:p-10 flex flex-col items-center justify-center text-center hover:border-[#feca57]/30 transition-all hover:translate-y-[-4px]">
-              <div className="w-16 h-16 rounded-full bg-[#192233] flex items-center justify-center mb-5 group-hover:bg-gradient-brand transition-colors duration-300">
-                <span className="material-symbols-outlined text-white text-3xl">
-                  verified
-                </span>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Tile 1 */}
+            <div className="group rounded-xl bg-[#111722] border border-[#232f48] p-6 hover:border-[#feca57]/30 transition-all hover:translate-y-[-4px]">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-lg bg-[#192233] flex items-center justify-center group-hover:bg-gradient-brand transition-colors duration-300 shrink-0">
+                  <span className="material-symbols-outlined text-white text-[28px]">
+                    verified
+                  </span>
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-white mb-1">
+                    Shop with Confidence
+                  </h3>
+                  <p className="text-gray-400 leading-relaxed">
+                    See the look on you first—then decide.
+                  </p>
+                </div>
               </div>
-              <h3 className="text-base sm:text-lg md:text-xl font-bold mb-2 text-white">
-                Shop with confidence
-              </h3>
-              <p className="text-gray-400 text-sm sm:text-base leading-relaxed max-w-[18ch]">
-                See the look on you first.
-              </p>
             </div>
 
-            {/* Card 2 */}
-            <div className="group rounded-full aspect-square bg-[#111722] border border-[#232f48] p-6 sm:p-8 md:p-10 flex flex-col items-center justify-center text-center hover:border-[#135bec]/30 transition-all hover:translate-y-[-4px]">
-              <div className="w-16 h-16 rounded-full bg-[#192233] flex items-center justify-center mb-5 group-hover:bg-gradient-brand transition-colors duration-300">
-                <span className="material-symbols-outlined text-white text-3xl">
-                  assignment_return
-                </span>
+            {/* Tile 2 */}
+            <div className="group rounded-xl bg-[#111722] border border-[#232f48] p-6 hover:border-[#135bec]/30 transition-all hover:translate-y-[-4px]">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-lg bg-[#192233] flex items-center justify-center group-hover:bg-gradient-brand transition-colors duration-300 shrink-0">
+                  <span className="material-symbols-outlined text-white text-[28px]">
+                    assignment_return
+                  </span>
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-white mb-1">
+                    Reduce Returns
+                  </h3>
+                  <p className="text-gray-400 leading-relaxed">
+                    Better decisions, fewer surprises at delivery.
+                  </p>
+                </div>
               </div>
-              <h3 className="text-base sm:text-lg md:text-xl font-bold mb-2 text-white">
-                Reduce returns
-              </h3>
-              <p className="text-gray-400 text-sm sm:text-base leading-relaxed max-w-[18ch]">
-                Fewer surprises at delivery.
-              </p>
             </div>
 
-            {/* Card 3 */}
-            <div className="group rounded-full aspect-square bg-[#111722] border border-[#232f48] p-6 sm:p-8 md:p-10 flex flex-col items-center justify-center text-center hover:border-[#ff6b6b]/30 transition-all hover:translate-y-[-4px]">
-              <div className="w-16 h-16 rounded-full bg-[#192233] flex items-center justify-center mb-5 group-hover:bg-gradient-brand transition-colors duration-300">
-                <span className="material-symbols-outlined text-white text-3xl">
-                  auto_fix_high
-                </span>
+            {/* Tile 3 */}
+            <div className="group rounded-xl bg-[#111722] border border-[#232f48] p-6 hover:border-[#ff6b6b]/30 transition-all hover:translate-y-[-4px]">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-lg bg-[#192233] flex items-center justify-center group-hover:bg-gradient-brand transition-colors duration-300 shrink-0">
+                  <span className="material-symbols-outlined text-white text-[28px]">
+                    auto_fix_high
+                  </span>
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-white mb-1">
+                    Stop Guessing Looks
+                  </h3>
+                  <p className="text-gray-400 leading-relaxed">
+                    Know what works with your body and vibe.
+                  </p>
+                </div>
               </div>
-              <h3 className="text-base sm:text-lg md:text-xl font-bold mb-2 text-white">
-                Stop guessing looks
-              </h3>
-              <p className="text-gray-400 text-sm sm:text-base leading-relaxed max-w-[18ch]">
-                Know before you buy.
-              </p>
             </div>
 
-            {/* Card 4 */}
-            <div className="group rounded-full aspect-square bg-[#111722] border border-[#232f48] p-6 sm:p-8 md:p-10 flex flex-col items-center justify-center text-center hover:border-[#feca57]/30 transition-all hover:translate-y-[-4px]">
-              <div className="w-16 h-16 rounded-full bg-[#192233] flex items-center justify-center mb-5 group-hover:bg-gradient-brand transition-colors duration-300">
-                <span className="material-symbols-outlined text-white text-3xl">
-                  checkroom
-                </span>
+            {/* Tile 4 */}
+            <div className="group rounded-xl bg-[#111722] border border-[#232f48] p-6 hover:border-[#feca57]/30 transition-all hover:translate-y-[-4px]">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-lg bg-[#192233] flex items-center justify-center group-hover:bg-gradient-brand transition-colors duration-300 shrink-0">
+                  <span className="material-symbols-outlined text-white text-[28px]">
+                    checkroom
+                  </span>
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-white mb-1">
+                    Buy What Actually Suits You
+                  </h3>
+                  <p className="text-gray-400 leading-relaxed">
+                    Pick pieces that match your shape and style.
+                  </p>
+                </div>
               </div>
-              <h3 className="text-base sm:text-lg md:text-xl font-bold mb-2 text-white">
-                Suits you
-              </h3>
-              <p className="text-gray-400 text-sm sm:text-base leading-relaxed max-w-[18ch]">
-                Buy what actually fits your style.
-              </p>
             </div>
           </div>
         </div>
