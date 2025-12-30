@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <main className="flex flex-col pt-16">
       {/* Top Navigation */}
-      <div className="fixed top-0 left-0 right-0 z-50 border-b border-[#232f48] bg-background-dark/80 backdrop-blur-md">
+      <div className="fixed top-0 left-0 right-0 z-50 border-b border-[#232f48] bg-[#050505]/80 backdrop-blur-md">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
           <header className="flex items-center justify-between h-16">
             {/* Logo */}
@@ -39,7 +39,7 @@ export default function Home() {
 
             {/* CTA */}
             <div className="flex items-center gap-4">
-              <button className="hidden sm:flex group relative overflow-hidden rounded-lg bg-primary px-5 py-2 transition-all hover:bg-primary-hover hover:scale-105 active:scale-95">
+              <button className="hidden sm:flex group relative overflow-hidden rounded-lg bg-[#135bec] px-5 py-2 transition-all hover:bg-[#1d6bf5] hover:scale-105 active:scale-95">
                 <span className="relative z-10 text-sm font-bold text-white flex items-center gap-2">
                   Add to Chrome
                   <span className="material-symbols-outlined text-[18px]">
@@ -88,7 +88,7 @@ export default function Home() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
-                <button className="flex h-14 items-center justify-center rounded-lg bg-primary px-8 text-base font-bold text-white shadow-lg shadow-primary/25 transition-all hover:bg-primary-hover hover:scale-105 active:scale-95">
+                <button className="flex h-14 items-center justify-center rounded-lg bg-[#135bec] px-8 text-base font-bold text-white shadow-lg shadow-[#135bec]/25 transition-all hover:bg-[#1d6bf5] hover:scale-105 active:scale-95">
                   Add to Chrome - It&apos;s Free
                 </button>
                 <button className="flex h-14 items-center justify-center rounded-lg border border-[#324467] bg-[#111722]/50 px-8 text-base font-medium text-white transition-all hover:bg-[#111722] hover:border-gray-500">
@@ -102,7 +102,7 @@ export default function Home() {
               <div className="flex items-center justify-center lg:justify-start gap-4 text-sm text-gray-500 pt-2">
                 <div className="flex -space-x-2">
                   <div
-                    className="w-8 h-8 rounded-full border-2 border-background-dark bg-gray-600 bg-center bg-cover"
+                    className="w-8 h-8 rounded-full border-2 border-[#050505] bg-gray-600 bg-center bg-cover"
                     aria-label="User avatar 1"
                     style={{
                       backgroundImage:
@@ -110,7 +110,7 @@ export default function Home() {
                     }}
                   />
                   <div
-                    className="w-8 h-8 rounded-full border-2 border-background-dark bg-gray-600 bg-center bg-cover"
+                    className="w-8 h-8 rounded-full border-2 border-[#050505] bg-gray-600 bg-center bg-cover"
                     aria-label="User avatar 2"
                     style={{
                       backgroundImage:
@@ -118,7 +118,7 @@ export default function Home() {
                     }}
                   />
                   <div
-                    className="w-8 h-8 rounded-full border-2 border-background-dark bg-gray-600 bg-center bg-cover"
+                    className="w-8 h-8 rounded-full border-2 border-[#050505] bg-gray-600 bg-center bg-cover"
                     aria-label="User avatar 3"
                     style={{
                       backgroundImage:
@@ -252,7 +252,7 @@ export default function Home() {
 
       {/* Features Grid */}
       <section className="py-24 relative overflow-hidden" id="features">
-        <div className="absolute top-[20%] left-[-20%] w-[800px] h-[800px] bg-primary/5 rounded-full blur-[120px] pointer-events-none" />
+        <div className="absolute top-[20%] left-[-20%] w-[800px] h-[800px] bg-[#135bec]/5 rounded-full blur-[120px] pointer-events-none" />
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="mb-16 md:text-center max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-5xl font-bold mb-6">
@@ -329,7 +329,7 @@ export default function Home() {
               <div className="flex flex-col gap-8">
                 {/* Step 1 */}
                 <div className="flex gap-6">
-                  <div className="shrink-0 w-12 h-12 rounded-full border-2 border-[#324467] flex items-center justify-center font-bold text-xl text-gradient">
+                  <div className="shrink-0 w-12 h-12 rounded-full bg-gradient-brand flex items-center justify-center font-bold text-xl text-black shadow-lg shadow-[#feca57]/20">
                     1
                   </div>
                   <div>
@@ -345,7 +345,7 @@ export default function Home() {
 
                 {/* Step 2 */}
                 <div className="flex gap-6">
-                  <div className="shrink-0 w-12 h-12 rounded-full border-2 border-[#324467] flex items-center justify-center font-bold text-xl text-gradient">
+                  <div className="shrink-0 w-12 h-12 rounded-full bg-gradient-brand flex items-center justify-center font-bold text-xl text-black shadow-lg shadow-[#feca57]/20">
                     2
                   </div>
                   <div>
@@ -370,14 +370,15 @@ export default function Home() {
                     </h3>
                     <p className="text-gray-400">
                       Shop as usual. When you see something you like, click the
-                      &quot;Try On&quot; button that appears on product images.
+                      &quot;Try On&quot; button that appears at the bottom of
+                      the product page.
                     </p>
                   </div>
                 </div>
               </div>
 
               <div className="mt-10">
-                <button className="flex items-center gap-2 text-primary font-bold hover:text-white transition-colors">
+                <button className="flex items-center gap-2 text-[#135bec] font-bold hover:text-white transition-colors">
                   View full tutorial{" "}
                   <span className="material-symbols-outlined">
                     arrow_forward
@@ -424,7 +425,7 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col items-center gap-4">
-            <button className="flex min-w-[240px] h-16 items-center justify-center rounded-xl bg-primary px-8 text-lg font-bold text-white shadow-[0_0_40px_-10px_#135bec] transition-all hover:bg-primary-hover hover:scale-105 hover:shadow-[0_0_60px_-10px_#135bec]">
+            <button className="flex min-w-[240px] h-16 items-center justify-center rounded-xl bg-[#135bec] px-8 text-lg font-bold text-white shadow-[0_0_40px_-10px_#135bec] transition-all hover:bg-[#1d6bf5] hover:scale-105 hover:shadow-[0_0_60px_-10px_#135bec]">
               <span className="mr-2">Add to Chrome</span>
               <span className="material-symbols-outlined">rocket_launch</span>
             </button>
@@ -436,7 +437,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-background-dark border-t border-[#232f48] py-12">
+      <footer className="bg-[#050505] border-t border-[#232f48] py-12">
         <div className="max-w-[1280px] mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-2">
             <span className="material-symbols-outlined text-gray-400">

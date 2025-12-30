@@ -29,7 +29,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${spaceGrotesk.variable} font-display bg-background-dark text-white overflow-x-hidden selection:bg-[#feca57] selection:text-black antialiased`}
+        className={`${spaceGrotesk.variable} font-display bg-[#050505] text-white overflow-x-hidden selection:bg-[#feca57] selection:text-black antialiased`}
       >
         {children}
       </body>
