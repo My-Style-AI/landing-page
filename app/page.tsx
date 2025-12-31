@@ -112,7 +112,7 @@ export default function Home() {
                 </button>
               </div>
 
-              <div className="flex items-center justify-center lg:justify-start gap-4 text-sm text-gray-500 pt-2">
+              {/*  <div className="flex items-center justify-center lg:justify-start gap-4 text-sm text-gray-500 pt-2">
                 <div className="flex -space-x-2">
                   <div
                     className="w-8 h-8 rounded-full border-2 border-[#050505] bg-gray-600 bg-center bg-cover"
@@ -139,8 +139,9 @@ export default function Home() {
                     }}
                   />
                 </div>
-                <p>Used by 10,000+ shoppers</p>
-              </div>
+                               <p>Used by 10,000+ shoppers</p>
+                 {" "}
+              </div> */}
             </div>
 
             {/* Right Visual */}
