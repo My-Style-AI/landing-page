@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+/* Make interactive elements feel clickable */
+button:not(:disabled),
+[role="button"]:not([aria-disabled="true"]) {
+  cursor: pointer;
+}
+
 .text-gradient {
   background: linear-gradient(135deg, #ff6b6b, #feca57);
   -webkit-background-clip: text;

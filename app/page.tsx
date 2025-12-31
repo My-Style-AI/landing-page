@@ -1,4 +1,14 @@
+"use client";
+
+import { useState } from "react";
+import { MediaModal } from "./components/MediaModal";
+
 export default function Home() {
+  const [isDemoOpen, setIsDemoOpen] = useState(false);
+  // TODO: Replace with your real embed URL (YouTube/Vimeo). Example:
+  // https://www.youtube.com/embed/VIDEO_ID?autoplay=1
+  const demoEmbedUrl = "";
+
   return (
     <main className="flex flex-col pt-16">
       {/* Top Navigation */}
@@ -91,7 +101,10 @@ export default function Home() {
                 <button className="flex h-14 items-center justify-center rounded-lg bg-[#135bec] px-8 text-base font-bold text-white shadow-lg shadow-[#135bec]/25 transition-all hover:bg-[#1d6bf5] hover:scale-105 active:scale-95">
                   Add to Chrome - It&apos;s Free
                 </button>
-                <button className="flex h-14 items-center justify-center rounded-lg border border-[#324467] bg-[#111722]/50 px-8 text-base font-medium text-white transition-all hover:bg-[#111722] hover:border-gray-500">
+                <button
+                  className="flex h-14 items-center justify-center rounded-lg border border-[#324467] bg-[#111722]/50 px-8 text-base font-medium text-white transition-all hover:bg-[#111722] hover:border-gray-500 cursor-pointer"
+                  onClick={() => setIsDemoOpen(true)}
+                >
                   <span className="material-symbols-outlined mr-2">
                     play_circle
                   </span>
@@ -222,26 +235,6 @@ export default function Home() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
             {/* Tile 1 */}
-            <div className="group rounded-xl bg-[#111722] border border-[#232f48] p-6 hover:border-[#feca57]/30 transition-all hover:translate-y-[-4px]">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-lg bg-[#192233] flex items-center justify-center group-hover:bg-gradient-brand transition-colors duration-300 shrink-0">
-                  <span className="material-symbols-outlined text-white text-[28px]">
-                    verified
-                  </span>
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold text-white mb-1">
-                    Shop with Confidence
-                  </h3>
-                  <p className="text-gray-400 leading-relaxed">
-                    See the look on you before you buy, so you feel confident
-                    checking out.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Tile 2 */}
             <div className="group rounded-xl bg-[#111722] border border-[#232f48] p-6 hover:border-[#135bec]/30 transition-all hover:translate-y-[-4px]">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-lg bg-[#192233] flex items-center justify-center group-hover:bg-gradient-brand transition-colors duration-300 shrink-0">
@@ -256,6 +249,25 @@ export default function Home() {
                   <p className="text-gray-400 leading-relaxed">
                     Make smarter picks upfront with fewer “doesn’t fit / doesn’t
                     suit me” surprises.
+                  </p>
+                </div>
+              </div>
+            </div>
+            {/* Tile 2 */}
+            <div className="group rounded-xl bg-[#111722] border border-[#232f48] p-6 hover:border-[#135bec]/30 transition-all hover:translate-y-[-4px]">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-lg bg-[#192233] flex items-center justify-center group-hover:bg-gradient-brand transition-colors duration-300 shrink-0">
+                  <span className="material-symbols-outlined text-white text-[28px]">
+                    schedule
+                  </span>
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-white mb-1">
+                    Save Time Shopping
+                  </h3>
+                  <p className="text-gray-400 leading-relaxed">
+                    Compare looks in seconds and move on fast—no more endless
+                    tabs and second-guessing.
                   </p>
                 </div>
               </div>
@@ -302,20 +314,20 @@ export default function Home() {
             </div>
 
             {/* Tile 5 */}
-            <div className="group rounded-xl bg-[#111722] border border-[#232f48] p-6 hover:border-[#135bec]/30 transition-all hover:translate-y-[-4px]">
+            <div className="group rounded-xl bg-[#111722] border border-[#232f48] p-6 hover:border-[#feca57]/30 transition-all hover:translate-y-[-4px]">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-lg bg-[#192233] flex items-center justify-center group-hover:bg-gradient-brand transition-colors duration-300 shrink-0">
                   <span className="material-symbols-outlined text-white text-[28px]">
-                    schedule
+                    verified
                   </span>
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-white mb-1">
-                    Save Time Shopping
+                    Shop with Confidence
                   </h3>
                   <p className="text-gray-400 leading-relaxed">
-                    Compare looks in seconds and move on fast—no more endless
-                    tabs and second-guessing.
+                    See the look on you before you buy, so you feel confident
+                    checking out.
                   </p>
                 </div>
               </div>
@@ -472,8 +484,11 @@ export default function Home() {
               </div>
 
               <div className="mt-10">
-                <button className="flex items-center gap-2 text-[#135bec] font-bold hover:text-white transition-colors">
-                  View full tutorial{" "}
+                <button
+                  className="cursor-pointer flex items-center gap-2 text-[#135bec] font-bold hover:text-white transition-colors"
+                  onClick={() => setIsDemoOpen(true)}
+                >
+                  View Full Tutorial{" "}
                   <span className="material-symbols-outlined">
                     arrow_forward
                   </span>
@@ -491,18 +506,29 @@ export default function Home() {
                       'url("https://lh3.googleusercontent.com/aida-public/AB6AXuDU7HvsFuuG10B6qscuVQcjZbnvQdqro0rpKaYvdrmwsjH4pcDZ7LkVP1iKEyuDQezJE2-GybEnjd3tYtrthUjeAhLLc7aPJLX17GB3xmQIIiOvZgB3mHSBaxJx-yECOGWbgZ9CcsqUqJs0bI3TBMWz1QFI9NsRUYyHR2TgIITqj0_KFVAj62D6pDOLIs4wv0EjAVKxdcDv6D0Q7snyOg1exP9yxZZ55qEJsefrFWnXQfr4rEIxqAf8cDXHojrZijADILlr6NB_pwI")',
                   }}
                 />
-                <div className="absolute inset-0 bg-black/50 flex items-center justify-center group cursor-pointer hover:bg-black/40 transition-colors">
+                <button
+                  className="absolute inset-0 bg-black/50 flex items-center justify-center group hover:bg-black/40 transition-colors"
+                  onClick={() => setIsDemoOpen(true)}
+                  aria-label="Play demo video"
+                >
                   <div className="w-20 h-20 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center border border-white/20 group-hover:scale-110 transition-transform">
                     <span className="material-symbols-outlined text-white text-5xl fill-current">
                       play_arrow
                     </span>
                   </div>
-                </div>
+                </button>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <MediaModal
+        open={isDemoOpen}
+        onClose={() => setIsDemoOpen(false)}
+        title="Demo"
+        embedUrl={demoEmbedUrl}
+      />
 
       {/* CTA Section */}
       <section className="py-24 relative overflow-hidden">
