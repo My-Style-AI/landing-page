@@ -2,9 +2,15 @@
 
 import { useState } from "react";
 import { MediaModal } from "./components/MediaModal";
+import { PolicyModal } from "./components/PolicyModal";
+import { TermsModal } from "./components/TermsModal";
+import { SupportModal } from "./components/SupportModal";
 
 export default function Home() {
   const [isDemoOpen, setIsDemoOpen] = useState(false);
+  const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);
+  const [isTermsOpen, setIsTermsOpen] = useState(false);
+  const [isSupportOpen, setIsSupportOpen] = useState(false);
   // TODO: Replace with your real embed URL (YouTube/Vimeo). Example:
   // https://www.youtube.com/embed/VIDEO_ID?autoplay=1
   const demoEmbedUrl = "";
@@ -21,7 +27,7 @@ export default function Home() {
                 checkroom
               </span>
               <h2 className="text-xl font-bold tracking-tight text-white">
-                AI Try-On
+                TryB4Buy
               </h2>
             </div>
 
@@ -531,6 +537,18 @@ export default function Home() {
         embedUrl={demoEmbedUrl}
       />
 
+      <PolicyModal
+        open={isPrivacyOpen}
+        onClose={() => setIsPrivacyOpen(false)}
+      />
+
+      <TermsModal open={isTermsOpen} onClose={() => setIsTermsOpen(false)} />
+      <SupportModal
+        open={isSupportOpen}
+        onClose={() => setIsSupportOpen(false)}
+        email="tryon.style.ai@gmail.com"
+      />
+
       {/* CTA Section */}
       <section className="py-24 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-brand opacity-5" />
@@ -564,21 +582,39 @@ export default function Home() {
             <span className="material-symbols-outlined text-gray-400">
               checkroom
             </span>
-            <span className="font-bold text-lg">AI Try-On</span>
+            <span className="font-bold text-lg">TryB4Buy</span>
           </div>
           <div className="flex gap-8 text-sm text-gray-400">
-            <a className="hover:text-white transition-colors" href="#">
+            <button
+              className="hover:text-white transition-colors"
+              onClick={() => setIsPrivacyOpen(true)}
+              type="button"
+            >
               Privacy Policy
-            </a>
-            <a className="hover:text-white transition-colors" href="#">
+            </button>
+            <button
+              className="hover:text-white transition-colors"
+              onClick={() => setIsTermsOpen(true)}
+              type="button"
+            >
               Terms of Service
-            </a>
-            <a className="hover:text-white transition-colors" href="#">
+            </button>
+            <button
+              className="hover:text-white transition-colors"
+              onClick={() => setIsSupportOpen(true)}
+              type="button"
+            >
               Support
+            </button>
+            <a
+              className="hover:text-white transition-colors"
+              href="mailto:tryon.style.ai@gmail.com?subject=TryB4Buy%20Feedback&body=What%20should%20we%20improve%3F%0A%0A"
+            >
+              Feedback
             </a>
           </div>
           <div className="text-sm text-gray-600">
-            © 2023 AI Try-On Inc. All rights reserved.
+            © 2026 TryB4Buy Inc. All rights reserved.
           </div>
         </div>
       </footer>
