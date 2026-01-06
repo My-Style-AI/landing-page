@@ -6,6 +6,11 @@ button:not(:disabled),
   cursor: pointer;
 }
 
+/* Make anchor links feel clickable too */
+a[href] {
+  cursor: pointer;
+}
+
 .text-gradient {
   background: linear-gradient(135deg, #ff6b6b, #feca57);
   -webkit-background-clip: text;

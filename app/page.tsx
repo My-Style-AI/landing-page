@@ -11,6 +11,7 @@ export default function Home() {
   const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);
   const [isTermsOpen, setIsTermsOpen] = useState(false);
   const [isSupportOpen, setIsSupportOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   // TODO: Replace with your real embed URL (YouTube/Vimeo). Example:
   // https://www.youtube.com/embed/VIDEO_ID?autoplay=1
   const demoEmbedUrl = "";
@@ -65,13 +66,81 @@ export default function Home() {
               </button>
 
               {/* Mobile Menu Icon */}
-              <button className="md:hidden text-white" aria-label="Open menu">
-                <span className="material-symbols-outlined">menu</span>
+              <button
+                className="md:hidden text-white"
+                aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+                aria-expanded={isMobileMenuOpen}
+                aria-controls="mobile-nav"
+                onClick={() => setIsMobileMenuOpen((v) => !v)}
+                type="button"
+              >
+                <span className="material-symbols-outlined">
+                  {isMobileMenuOpen ? "close" : "menu"}
+                </span>
               </button>
             </div>
           </header>
         </div>
       </div>
+
+      {/* Mobile Nav Drawer */}
+      {isMobileMenuOpen ? (
+        <div className="fixed inset-0 z-90 md:hidden" id="mobile-nav">
+          <button
+            className="absolute inset-0 bg-black/70 backdrop-blur-sm"
+            onClick={() => setIsMobileMenuOpen(false)}
+            aria-label="Close menu"
+            type="button"
+          />
+          <div className="absolute top-16 left-0 right-0 border-b border-[#232f48] bg-[#050505]/95 backdrop-blur-md">
+            <div className="max-w-[1280px] mx-auto px-4 py-4">
+              <nav className="flex flex-col gap-2">
+                <a
+                  className="rounded-xl px-4 py-3 text-sm font-semibold text-white hover:bg-[#111722]"
+                  href="#features"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Features
+                </a>
+                <a
+                  className="rounded-xl px-4 py-3 text-sm font-semibold text-white hover:bg-[#111722]"
+                  href="#how-it-works"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  How it Works
+                </a>
+                <a
+                  className="rounded-xl px-4 py-3 text-sm font-semibold text-white hover:bg-[#111722]"
+                  href="#benefits"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Benefits
+                </a>
+
+                <div className="mt-2 grid grid-cols-1 gap-3">
+                  <button
+                    className="h-12 rounded-xl bg-[#135bec] px-4 text-sm font-bold text-white hover:bg-[#1d6bf5]"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    type="button"
+                  >
+                    Add to Chrome
+                  </button>
+                  <button
+                    className="h-12 rounded-xl border border-[#324467] bg-[#111722]/50 px-4 text-sm font-bold text-white hover:bg-[#111722] hover:border-gray-500"
+                    onClick={() => {
+                      setIsMobileMenuOpen(false);
+                      setIsDemoOpen(true);
+                    }}
+                    type="button"
+                  >
+                    Watch Demo
+                  </button>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      ) : null}
 
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
