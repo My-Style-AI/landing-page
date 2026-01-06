@@ -92,51 +92,73 @@ export default function Home() {
             aria-label="Close menu"
             type="button"
           />
-          <div className="absolute top-16 left-0 right-0 border-b border-[#232f48] bg-[#050505]/95 backdrop-blur-md">
-            <div className="max-w-[1280px] mx-auto px-4 py-4">
-              <nav className="flex flex-col gap-2">
-                <a
-                  className="rounded-xl px-4 py-3 text-sm font-semibold text-white hover:bg-[#111722]"
-                  href="#features"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Features
-                </a>
-                <a
-                  className="rounded-xl px-4 py-3 text-sm font-semibold text-white hover:bg-[#111722]"
-                  href="#how-it-works"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  How it Works
-                </a>
-                <a
-                  className="rounded-xl px-4 py-3 text-sm font-semibold text-white hover:bg-[#111722]"
-                  href="#benefits"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Benefits
-                </a>
-
-                <div className="mt-2 grid grid-cols-1 gap-3">
-                  <button
-                    className="h-12 rounded-xl bg-[#135bec] px-4 text-sm font-bold text-white hover:bg-[#1d6bf5]"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    type="button"
-                  >
-                    Add to Chrome
-                  </button>
-                  <button
-                    className="h-12 rounded-xl border border-[#324467] bg-[#111722]/50 px-4 text-sm font-bold text-white hover:bg-[#111722] hover:border-gray-500"
-                    onClick={() => {
-                      setIsMobileMenuOpen(false);
-                      setIsDemoOpen(true);
-                    }}
-                    type="button"
-                  >
-                    Watch Demo
-                  </button>
+          <div className="absolute inset-0 bg-[#050505]/95 backdrop-blur-md">
+            <div className="max-w-[1280px] mx-auto px-4 pt-4 pb-6 h-full flex flex-col">
+              {/* Header */}
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <span className="material-symbols-outlined text-gradient text-3xl">
+                    checkroom
+                  </span>
+                  <span className="text-lg font-bold tracking-tight text-white">
+                    TryB4Buy
+                  </span>
                 </div>
-              </nav>
+                <button
+                  className="rounded-lg border border-[#232f48] bg-[#111722] px-3 py-2 text-white hover:border-[#324467]"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  aria-label="Close menu"
+                  type="button"
+                >
+                  <span className="material-symbols-outlined">close</span>
+                </button>
+              </div>
+
+              <div className="mt-6 flex-1 overflow-y-auto">
+                <nav className="flex flex-col gap-4">
+                  <a
+                    className="text-2xl font-bold text-white"
+                    href="#features"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Features
+                  </a>
+                  <a
+                    className="text-2xl font-bold text-white"
+                    href="#how-it-works"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    How it Works
+                  </a>
+                  <a
+                    className="text-2xl font-bold text-white"
+                    href="#benefits"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Benefits
+                  </a>
+
+                  <div className="mt-10 grid grid-cols-1 gap-4">
+                    <button
+                      className="h-16 rounded-2xl bg-[#135bec] px-6 text-lg font-bold text-white hover:bg-[#1d6bf5]"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      type="button"
+                    >
+                      Add to Chrome
+                    </button>
+                    <button
+                      className="h-16 rounded-2xl border border-[#324467] bg-[#111722]/50 px-6 text-lg font-bold text-white hover:bg-[#111722] hover:border-gray-500"
+                      onClick={() => {
+                        setIsMobileMenuOpen(false);
+                        setIsDemoOpen(true);
+                      }}
+                      type="button"
+                    >
+                      Watch Demo
+                    </button>
+                  </div>
+                </nav>
+              </div>
             </div>
           </div>
         </div>
