@@ -14,7 +14,8 @@ export default function Home() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   // TODO: Replace with your real embed URL (YouTube/Vimeo). Example:
   // https://www.youtube.com/embed/VIDEO_ID?autoplay=1
-  const demoEmbedUrl = "";
+  const demoEmbedUrl =
+    "https://www.loom.com/embed/17fab80c3e1d4aebad1f2b397a21870f";
 
   return (
     <main className="flex flex-col pt-16">
@@ -24,16 +25,24 @@ export default function Home() {
           <header className="flex items-center justify-between h-16">
             {/* Logo */}
             <div className="flex items-center gap-2">
-              <span className="material-symbols-outlined text-gradient text-3xl">
-                checkroom
-              </span>
-              <h2 className="text-xl font-bold tracking-tight text-white">
-                TryB4Buy
-              </h2>
+              <a href="/" className="flex items-center gap-2">
+                <span className="material-symbols-outlined text-gradient text-3xl">
+                  checkroom
+                </span>
+                <h2 className="text-xl font-bold tracking-tight text-white">
+                  TryB4Buy
+                </h2>
+              </a>
             </div>
 
             {/* Desktop Nav */}
             <nav className="hidden md:flex items-center gap-8">
+              <a
+                className="text-sm font-medium text-gray-300 hover:text-white transition-colors"
+                href="#benefits"
+              >
+                Benefits
+              </a>
               <a
                 className="text-sm font-medium text-gray-300 hover:text-white transition-colors"
                 href="#features"
@@ -48,9 +57,10 @@ export default function Home() {
               </a>
               <a
                 className="text-sm font-medium text-gray-300 hover:text-white transition-colors"
-                href="#benefits"
+                href="/coming-soon"
+                target="_blank"
               >
-                Benefits
+                Coming Soon
               </a>
             </nav>
 
@@ -137,6 +147,13 @@ export default function Home() {
                   >
                     Benefits
                   </a>
+                  <a
+                    className="text-2xl font-bold text-white"
+                    href="/coming-soon"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Coming Soon
+                  </a>
 
                   <div className="mt-10 grid grid-cols-1 gap-4">
                     <button
@@ -177,7 +194,7 @@ export default function Home() {
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#232f48]/50 border border-[#232f48] w-fit mx-auto lg:mx-0 backdrop-blur-sm">
                 <span className="w-2 h-2 rounded-full bg-gradient-brand animate-pulse" />
                 <span className="text-xs font-medium text-gray-300 uppercase tracking-wider">
-                  New v2.0 Released
+                  New v1.0 Released
                 </span>
               </div>
 
@@ -582,15 +599,16 @@ export default function Home() {
               </div>
 
               <div className="mt-10">
-                <button
+                <a
                   className="cursor-pointer flex items-center gap-2 text-[#135bec] font-bold hover:text-white transition-colors"
-                  onClick={() => setIsDemoOpen(true)}
+                  href="/docs"
+                  target="_blank"
                 >
-                  View Full Tutorial{" "}
+                  Read the Docs{" "}
                   <span className="material-symbols-outlined">
                     arrow_forward
                   </span>
-                </button>
+                </a>
               </div>
             </div>
 
@@ -670,12 +688,14 @@ export default function Home() {
       <footer className="bg-[#050505] border-t border-[#232f48] py-12">
         <div className="max-w-[1280px] mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-2">
-            <span className="material-symbols-outlined text-gray-400">
-              checkroom
-            </span>
-            <span className="font-bold text-lg">TryB4Buy</span>
+            <a href="/" className="flex items-center gap-2">
+              <span className="material-symbols-outlined text-gray-400">
+                checkroom
+              </span>
+              <span className="font-bold text-lg">TryB4Buy</span>
+            </a>
           </div>
-          <div className="flex gap-8 text-sm text-gray-400">
+          <div className="flex flex-wrap justify-center md:justify-start gap-x-8 gap-y-3 text-sm text-gray-400">
             <button
               className="hover:text-white transition-colors"
               onClick={() => setIsPrivacyOpen(true)}
@@ -699,9 +719,19 @@ export default function Home() {
             </button>
             <a
               className="hover:text-white transition-colors"
-              href="mailto:tryon.style.ai@gmail.com?subject=TryB4Buy%20Feedback&body=What%20should%20we%20improve%3F%0A%0A"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScXTUCnfWs4ekkP5FsUvBi_Im_Dl8ES6xiU-YSYC9PfTtwdog/viewform"
+              target="_blank"
             >
-              Feedback
+              Leave Feedback
+            </a>
+            <a className="hover:text-white transition-colors" href="/docs">
+              Docs
+            </a>
+            <a
+              className="hover:text-white transition-colors"
+              href="/coming-soon"
+            >
+              Coming Soon
             </a>
           </div>
           <div className="text-sm text-gray-600">

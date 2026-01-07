@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Make interactive elements feel clickable */
 button:not(:disabled),
 [role="button"]:not([aria-disabled="true"]) {

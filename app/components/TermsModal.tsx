@@ -66,7 +66,7 @@ export function TermsModal({ open, onClose }: TermsModalProps) {
                 </p>
                 <p className="mt-1">
                   <span className="text-gray-400">Extension name:</span>{" "}
-                  <span className="text-white">[StyleAI / Virtual Fitting Room]</span>
+                  <span className="text-white">Tryb4Buy</span>
                 </p>
                 <p className="mt-1">
                   <span className="text-gray-400">Contact:</span>{" "}
@@ -79,11 +79,13 @@ export function TermsModal({ open, onClose }: TermsModalProps) {
             </div>
 
             <section className="space-y-3">
-              <h3 className="text-lg font-semibold text-white">1) The service</h3>
+              <h3 className="text-lg font-semibold text-white">
+                1) The service
+              </h3>
               <p className="leading-relaxed">
-                The Extension provides tools to assist with features like virtual
-                try-on, comparing images, and viewing results. Features may change
-                over time.
+                The Extension provides tools to assist with features like
+                virtual try-on, comparing images, and viewing results. Features
+                may change over time.
               </p>
             </section>
 
@@ -103,8 +105,12 @@ export function TermsModal({ open, onClose }: TermsModalProps) {
               <p className="leading-relaxed">You agree not to:</p>
               <ul className="list-disc pl-6 space-y-2">
                 <li>Use the Extension for illegal purposes.</li>
-                <li>Interfere with or disrupt the Extension or its services.</li>
-                <li>Attempt to reverse engineer, bypass security, or misuse APIs.</li>
+                <li>
+                  Interfere with or disrupt the Extension or its services.
+                </li>
+                <li>
+                  Attempt to reverse engineer, bypass security, or misuse APIs.
+                </li>
                 <li>Upload content you don&apos;t have rights to use.</li>
               </ul>
             </section>
@@ -134,12 +140,15 @@ export function TermsModal({ open, onClose }: TermsModalProps) {
             </section>
 
             <section className="space-y-3">
-              <h3 className="text-lg font-semibold text-white">6) Disclaimers</h3>
+              <h3 className="text-lg font-semibold text-white">
+                6) Disclaimers
+              </h3>
               <p className="leading-relaxed">
                 The Extension is provided &quot;as is&quot; and &quot;as
                 available.&quot; We do not guarantee uninterrupted operation,
-                accuracy of results, or that results will meet your expectations.
-                Virtual try-on outputs are illustrative and may be imperfect.
+                accuracy of results, or that results will meet your
+                expectations. Virtual try-on outputs are illustrative and may be
+                imperfect.
               </p>
             </section>
 
@@ -148,19 +157,22 @@ export function TermsModal({ open, onClose }: TermsModalProps) {
                 7) Limitation of liability
               </h3>
               <p className="leading-relaxed">
-                To the maximum extent permitted by law, we will not be liable for
-                indirect, incidental, special, consequential, or punitive damages,
-                or any loss of data, revenue, or profits arising from your use of
-                the Extension.
+                To the maximum extent permitted by law, we will not be liable
+                for indirect, incidental, special, consequential, or punitive
+                damages, or any loss of data, revenue, or profits arising from
+                your use of the Extension.
               </p>
             </section>
 
             <section className="space-y-3">
-              <h3 className="text-lg font-semibold text-white">8) Termination</h3>
+              <h3 className="text-lg font-semibold text-white">
+                8) Termination
+              </h3>
               <p className="leading-relaxed">
-                We may suspend or terminate access to the Extension if you violate
-                these Terms or if necessary to protect the service or users. You
-                may stop using the Extension at any time by uninstalling it.
+                We may suspend or terminate access to the Extension if you
+                violate these Terms or if necessary to protect the service or
+                users. You may stop using the Extension at any time by
+                uninstalling it.
               </p>
             </section>
 
@@ -179,8 +191,9 @@ export function TermsModal({ open, onClose }: TermsModalProps) {
                 10) Governing law
               </h3>
               <p className="leading-relaxed">
-                These Terms are governed by the laws of [Your State/Country],
-                without regard to conflict of law principles.
+                These Terms are governed by the laws of British Columbia, Canada
+                and by the local laws of the user's country, without regard to
+                conflict of law principles.
               </p>
             </section>
           </div>
@@ -189,6 +202,3 @@ export function TermsModal({ open, onClose }: TermsModalProps) {
     </div>
   );
 }
-
-
-

@@ -66,7 +66,7 @@ export function PolicyModal({ open, onClose }: PolicyModalProps) {
                 </p>
                 <p className="mt-1">
                   <span className="text-gray-400">Extension name:</span>{" "}
-                  <span className="text-white">[StyleAI / Virtual Fitting Room]</span>
+                  <span className="text-white">TryB4Buy</span>
                 </p>
                 <p className="mt-1">
                   <span className="text-gray-400">Contact:</span>{" "}
