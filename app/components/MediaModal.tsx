@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 type MediaModalProps = {
   open: boolean;
@@ -9,7 +9,14 @@ type MediaModalProps = {
   onClose: () => void;
 };
 
-export function MediaModal({ open, title, embedUrl, onClose }: MediaModalProps) {
+export function MediaModal({
+  open,
+  title,
+  embedUrl,
+  onClose,
+}: MediaModalProps) {
+  const [isPlayerLoaded, setIsPlayerLoaded] = useState(false);
+
   useEffect(() => {
     if (!open) return;
 
@@ -30,11 +37,16 @@ export function MediaModal({ open, title, embedUrl, onClose }: MediaModalProps) 
     };
   }, [open]);
 
+  useEffect(() => {
+    if (!open) return;
+    setIsPlayerLoaded(false);
+  }, [open, embedUrl]);
+
   if (!open) return null;
 
   return (
     <div
-      className="fixed inset-0 z-[100] flex items-center justify-center p-4"
+      className="fixed inset-0 z-100 flex items-center justify-center p-4"
       role="dialog"
       aria-modal="true"
       aria-label={title ?? "Media player"}
@@ -62,13 +74,26 @@ export function MediaModal({ open, title, embedUrl, onClose }: MediaModalProps) 
 
         <div className="relative w-full aspect-video bg-black">
           {embedUrl ? (
-            <iframe
-              className="absolute inset-0 h-full w-full"
-              src={embedUrl}
-              title={title ?? "Demo video"}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            />
+            <>
+              {!isPlayerLoaded ? (
+                <div className="absolute inset-0 flex items-center justify-center bg-black/40">
+                  <div className="flex flex-col items-center gap-3">
+                    <div className="h-10 w-10 rounded-full border-2 border-white/20 border-t-white animate-spin" />
+                    <p className="text-sm font-semibold text-white">
+                      Loading demo…
+                    </p>
+                  </div>
+                </div>
+              ) : null}
+              <iframe
+                className="absolute inset-0 h-full w-full"
+                src={embedUrl}
+                title={title ?? "Demo video"}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                onLoad={() => setIsPlayerLoaded(true)}
+              />
+            </>
           ) : (
             <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 text-center px-6">
               <p className="text-white font-semibold">No video URL set yet</p>
@@ -83,7 +108,3 @@ export function MediaModal({ open, title, embedUrl, onClose }: MediaModalProps) 
     </div>
   );
 }
-
-
-
-
