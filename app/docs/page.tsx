@@ -165,23 +165,46 @@ export default function DocsPage() {
 
               <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div className="rounded-2xl border border-[#232f48] bg-[#111722] p-5">
-                  <h3 className="text-lg font-bold">Amazon</h3>
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="shrink-0 w-7 h-7 flex items-center justify-center bg-white rounded p-1">
+                      <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg"
+                        alt="Amazon logo"
+                        className="h-full w-auto object-contain"
+                      />
+                    </div>
+                    <h3 className="text-lg font-bold">Amazon</h3>
+                  </div>
                   <p className="mt-2 text-sm text-gray-300 leading-relaxed">
-                    amazon.com, amazon.ca, amazon.co.uk, amazon.de, amazon.fr,
-                    amazon.it, amazon.es, amazon.co.jp, amazon.com.au,
-                    amazon.com.mx, amazon.nl, amazon.se, amazon.pl,
-                    amazon.com.br, amazon.in, amazon.sg, amazon.ae, amazon.sa,
-                    amazon.tr, and all regional subdomains.
+                    amazon.com, and all regional subdomains.
                   </p>
                 </div>
                 <div className="rounded-2xl border border-[#232f48] bg-[#111722] p-5">
-                  <h3 className="text-lg font-bold">Temu</h3>
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="shrink-0 w-7 h-7 flex items-center justify-center">
+                      <img
+                        src="/temu.webp"
+                        alt="Temu logo"
+                        className="h-5 w-auto object-contain"
+                      />
+                    </div>
+                    <h3 className="text-lg font-bold">Temu</h3>
+                  </div>
                   <p className="mt-2 text-sm text-gray-300 leading-relaxed">
                     temu.com and all regional subdomains.
                   </p>
                 </div>
                 <div className="rounded-2xl border border-[#232f48] bg-[#111722] p-5">
-                  <h3 className="text-lg font-bold">Lululemon</h3>
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="shrink-0 w-7 h-7 flex items-center justify-center">
+                      <img
+                        src="/lululemon.png"
+                        alt="Lululemon logo"
+                        className="h-5 w-auto object-contain"
+                      />
+                    </div>
+                    <h3 className="text-lg font-bold">Lululemon</h3>
+                  </div>
                   <p className="mt-2 text-sm text-gray-300 leading-relaxed">
                     lululemon.com, lululemon.com.hk, and all regional
                     subdomains.

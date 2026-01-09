@@ -339,7 +339,7 @@ export default function Home() {
 
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="mb-14 text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-5xl font-bold mb-5">
+            <h2 className="text-center text-3xl md:text-5xl font-bold mb-5">
               How It <span className="text-gradient">Benefits You</span>
             </h2>
             <p className="text-gray-400 text-lg">
@@ -476,7 +476,7 @@ export default function Home() {
         <div className="absolute top-[20%] left-[-20%] w-[800px] h-[800px] bg-[#135bec]/5 rounded-full blur-[120px] pointer-events-none" />
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="mb-16 md:text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-5xl font-bold mb-6">
+            <h2 className="text-center text-3xl md:text-5xl font-bold mb-6">
               Experience the <span className="text-gradient">Magic of AI</span>
             </h2>
             <p className="text-gray-400 text-lg">
@@ -543,8 +543,8 @@ export default function Home() {
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="flex-1">
-              <h2 className="text-3xl md:text-5xl font-bold mb-8">
-                How It Works
+              <h2 className="text-center md:text-left text-3xl md:text-5xl font-bold mb-6">
+                How It <span className="text-gradient">Works</span>
               </h2>
 
               <div className="flex flex-col gap-8">
