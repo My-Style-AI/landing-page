@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function ComingSoonPage() {
   const columns: Array<{
     title: string;
@@ -78,12 +80,14 @@ export default function ComingSoonPage() {
       {/* Top bar */}
       <div className="sticky top-0 z-50 border-b border-[#232f48] bg-[#050505]/85 backdrop-blur-md">
         <div className="max-w-[1240px] mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
-          <div className="flex items-center gap-2 min-w-0">
-            <span className="material-symbols-outlined text-gradient text-[22px]">
-              checkroom
-            </span>
-            <span className="font-bold truncate">TryB4Buy</span>
-          </div>
+          <Link href="/">
+            <div className="flex items-center gap-2 min-w-0">
+              <span className="material-symbols-outlined text-gradient text-[22px]">
+                checkroom
+              </span>
+              <span className="font-bold truncate">TryB4Buy</span>
+            </div>
+          </Link>
           <div className="flex items-center gap-4">
             <a
               className="text-sm font-semibold text-gray-300 hover:text-white transition-colors"
