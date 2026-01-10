@@ -696,20 +696,12 @@ export default function Home() {
             </a>
           </div>
           <div className="flex flex-wrap justify-center md:justify-start gap-x-8 gap-y-3 text-sm text-gray-400">
-            <button
-              className="hover:text-white transition-colors"
-              onClick={() => setIsPrivacyOpen(true)}
-              type="button"
-            >
+            <a className="hover:text-white transition-colors" href="/privacy">
               Privacy Policy
-            </button>
-            <button
-              className="hover:text-white transition-colors"
-              onClick={() => setIsTermsOpen(true)}
-              type="button"
-            >
+            </a>
+            <a className="hover:text-white transition-colors" href="/terms">
               Terms of Service
-            </button>
+            </a>
             <button
               className="hover:text-white transition-colors"
               onClick={() => setIsSupportOpen(true)}

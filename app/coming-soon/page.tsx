@@ -14,10 +14,10 @@ export default function ComingSoonPage() {
           title: "Virtual Wardrobe",
           description: "Save and organize all your try-ons in one place.",
         },
-        {
+        /*  {
           title: "Size Recommendation Engine",
           description: "AI-powered size suggestions based on your measurements.",
-        },
+        }, */
         {
           title: "Style Matching",
           description: "Get outfit suggestions and build complete looks.",
@@ -133,69 +133,75 @@ export default function ComingSoonPage() {
                     glow: "shadow-[0_0_80px_-30px_rgba(254,202,87,0.25)]",
                   }
                 : col.accent === "blue"
-                  ? {
-                      top: "bg-[#135bec]",
-                      badge:
-                        "bg-[#135bec]/15 text-[#6ea8ff] border-[#135bec]/25",
-                      glow: "shadow-[0_0_80px_-30px_rgba(19,91,236,0.25)]",
-                    }
-                  : {
-                      top: "bg-[#ff6b6b]",
-                      badge:
-                        "bg-[#ff6b6b]/15 text-[#ff9a9a] border-[#ff6b6b]/25",
-                      glow: "shadow-[0_0_80px_-30px_rgba(255,107,107,0.22)]",
-                    };
+                ? {
+                    top: "bg-[#135bec]",
+                    badge: "bg-[#135bec]/15 text-[#6ea8ff] border-[#135bec]/25",
+                    glow: "shadow-[0_0_80px_-30px_rgba(19,91,236,0.25)]",
+                  }
+                : {
+                    top: "bg-[#ff6b6b]",
+                    badge: "bg-[#ff6b6b]/15 text-[#ff9a9a] border-[#ff6b6b]/25",
+                    glow: "shadow-[0_0_80px_-30px_rgba(255,107,107,0.22)]",
+                  };
 
             return (
-            <div
-              key={col.title}
-              className={`rounded-2xl border border-[#232f48] bg-[#0a0e17] overflow-hidden ${accent.glow}`}
-            >
-              <div className={`h-1 w-full ${accent.top}`} />
-              <div className="px-5 py-4 border-b border-[#232f48] bg-[#050505]/35">
-                <div className="flex items-center justify-between gap-3">
-                  <div className="flex items-center gap-2">
-                    <h2 className="text-sm font-bold text-white">{col.title}</h2>
-                    <span
-                      className={`text-[11px] px-2 py-0.5 rounded-full border ${accent.badge}`}
-                    >
-                      {col.hint}
+              <div
+                key={col.title}
+                className={`rounded-2xl border border-[#232f48] bg-[#0a0e17] overflow-hidden ${accent.glow}`}
+              >
+                <div className={`h-1 w-full ${accent.top}`} />
+                <div className="px-5 py-4 border-b border-[#232f48] bg-[#050505]/35">
+                  <div className="flex items-center justify-between gap-3">
+                    <div className="flex items-center gap-2">
+                      <h2 className="text-sm font-bold text-white">
+                        {col.title}
+                      </h2>
+                      <span
+                        className={`text-[11px] px-2 py-0.5 rounded-full border ${accent.badge}`}
+                      >
+                        {col.hint}
+                      </span>
+                    </div>
+                    <span className="text-xs text-gray-500">
+                      {col.items.length}
                     </span>
                   </div>
-                  <span className="text-xs text-gray-500">{col.items.length}</span>
                 </div>
-              </div>
 
-              <div className="p-4 space-y-3">
-                {col.items.map((item) => (
-                  <div
-                    key={item.title}
-                    className="rounded-xl border border-[#232f48] bg-[#111722] p-4 hover:border-[#324467] transition-colors"
-                  >
-                    <div className="flex items-start gap-3">
-                      <div className="w-9 h-9 rounded-lg bg-[#192233] flex items-center justify-center shrink-0">
-                        <span className="material-symbols-outlined text-white text-[20px]">
-                          auto_awesome
-                        </span>
-                      </div>
-                      <div className="min-w-0">
-                        <p className="font-semibold text-white">{item.title}</p>
-                        <p className="mt-1 text-sm text-gray-400 leading-relaxed">
-                          {item.description}
-                        </p>
+                <div className="p-4 space-y-3">
+                  {col.items.map((item) => (
+                    <div
+                      key={item.title}
+                      className="rounded-xl border border-[#232f48] bg-[#111722] p-4 hover:border-[#324467] transition-colors"
+                    >
+                      <div className="flex items-start gap-3">
+                        <div className="w-9 h-9 rounded-lg bg-[#192233] flex items-center justify-center shrink-0">
+                          <span className="material-symbols-outlined text-white text-[20px]">
+                            auto_awesome
+                          </span>
+                        </div>
+                        <div className="min-w-0">
+                          <p className="font-semibold text-white">
+                            {item.title}
+                          </p>
+                          <p className="mt-1 text-sm text-gray-400 leading-relaxed">
+                            {item.description}
+                          </p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
-            </div>
-          );
+            );
           })}
         </div>
 
         <div className="mt-10 rounded-2xl border border-[#232f48] bg-[#111722] p-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
           <div>
-            <p className="text-white font-bold">Want to influence the roadmap?</p>
+            <p className="text-white font-bold">
+              Want to influence the roadmap?
+            </p>
             <p className="text-gray-400">
               Send feedback and tell us what to build next.
             </p>
@@ -225,5 +231,3 @@ export default function ComingSoonPage() {
     </main>
   );
 }
-
-
