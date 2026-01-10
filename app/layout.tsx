@@ -106,7 +106,7 @@ export default function RootLayout({
               description:
                 "AI-powered Chrome extension that lets you visualize any outfit on your body instantly while browsing your favorite stores like Amazon, Temu, and Lululemon.",
               url: "https://tryb4buy.io",
-              screenshot: "https://tryb4buy.io/screenshot.png",
+              screenshot: "https://tryb4buy.io/popup.png",
               softwareVersion: "1.0.0",
               releaseNotes:
                 "Initial release with support for Amazon, Temu, and Lululemon",

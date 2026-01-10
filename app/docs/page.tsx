@@ -99,6 +99,12 @@ export default function DocsPage() {
                 </div>
                 <a
                   className="block text-gray-300 hover:text-white"
+                  href="#screenshots"
+                >
+                  Screenshots
+                </a>
+                <a
+                  className="block text-gray-300 hover:text-white"
                   href="#who-is-this-for"
                 >
                   Who Is This Best For?
@@ -345,6 +351,83 @@ export default function DocsPage() {
                     with the original via slider, download, share, and browse
                     your history.
                   </p>
+                </div>
+              </div>
+            </section>
+
+            {/* Screenshots */}
+            <section
+              id="screenshots"
+              className="scroll-mt-24 py-10 border-b border-[#232f48]"
+            >
+              <h2 className="text-2xl font-bold">Screenshots</h2>
+              <p className="mt-3 text-gray-300 leading-relaxed">
+                See TryB4Buy in action. These screenshots show the key features
+                and interface of the extension.
+              </p>
+
+              <div className="mt-8 space-y-12">
+                {/* Popup Screenshot */}
+                <div className="space-y-4">
+                  <div>
+                    <h3 className="text-lg font-semibold text-white mb-1">
+                      Try-On Popup Interface
+                    </h3>
+                    <p className="text-sm text-gray-400">
+                      The popup that appears when you click &quot;Try It
+                      On&quot;. Upload your photos and select the clothing item
+                      you want to try on.
+                    </p>
+                  </div>
+                  <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4 overflow-hidden">
+                    <img
+                      src="/popup.png"
+                      alt="TryB4Buy popup interface showing photo selection and current clothing item"
+                      className="w-full h-auto rounded-lg shadow-lg"
+                    />
+                  </div>
+                </div>
+
+                {/* Try-On Result Screenshot */}
+                <div className="space-y-4">
+                  <div>
+                    <h3 className="text-lg font-semibold text-white mb-1">
+                      AI-Generated Try-On Result
+                    </h3>
+                    <p className="text-sm text-gray-400">
+                      See how the AI seamlessly applies clothing to your photo.
+                      The result shows a realistic visualization of how the item
+                      looks on you.
+                    </p>
+                  </div>
+                  <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4 overflow-hidden">
+                    <img
+                      src="/tryon-result.png"
+                      alt="TryB4Buy AI virtual try-on result showing a man wearing a grey sweater"
+                      className="w-full h-auto rounded-lg shadow-lg"
+                    />
+                  </div>
+                </div>
+
+                {/* Compare Results Screenshot */}
+                <div className="space-y-4">
+                  <div>
+                    <h3 className="text-lg font-semibold text-white mb-1">
+                      Compare Before &amp; After
+                    </h3>
+                    <p className="text-sm text-gray-400">
+                      Use the comparison view to see your original photo
+                      side-by-side with the AI-generated try-on. Navigate
+                      between results and download your favorites.
+                    </p>
+                  </div>
+                  <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4 overflow-hidden">
+                    <img
+                      src="/compare-results.png"
+                      alt="TryB4Buy compare results interface showing before and after comparison with navigation controls"
+                      className="w-full h-auto rounded-lg shadow-lg"
+                    />
+                  </div>
                 </div>
               </div>
             </section>
