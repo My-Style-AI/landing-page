@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tryb4buy.io/sitemap.xml
+

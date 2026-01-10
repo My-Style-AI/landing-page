@@ -1,3 +1,16 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "TryB4Buy Documentation - How to Use AI Virtual Try-On Extension",
+  description:
+    "Complete documentation for TryB4Buy. Learn how to use the AI-powered virtual try-on extension on Amazon, Temu, and Lululemon. Step-by-step guide, troubleshooting, and FAQs.",
+  openGraph: {
+    title: "TryB4Buy Documentation",
+    description: "Complete guide to using TryB4Buy AI virtual try-on extension",
+    url: "https://tryb4buy.io/docs",
+  },
+};
+
 export default function DocsPage() {
   return (
     <main className="min-h-screen bg-[#050505] text-white">
