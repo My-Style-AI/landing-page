@@ -47,3 +47,36 @@ a[href] {
 ::-webkit-scrollbar-thumb:hover {
   background: #324467;
 }
+
+/* Hero animation for before/after slider */
+@keyframes hero-animation-mask {
+  0% {
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  }
+  50% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  100% {
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  }
+}
+
+@keyframes hero-animation-handle {
+  0% {
+    left: 0%;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+.animate-hero-animation-mask {
+  animation: hero-animation-mask 4s ease-in-out infinite;
+}
+
+.animate-hero-animation-handle {
+  animation: hero-animation-handle 4s ease-in-out infinite;
+}

@@ -259,68 +259,49 @@ export default function Home() {
             </div>
 
             {/* Right Visual */}
-            <div className="relative z-10 group">
-              <div className="absolute -inset-1 bg-gradient-brand rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200" />
-              <div className="relative rounded-2xl bg-[#111722] border border-[#232f48] overflow-hidden aspect-4/3 shadow-2xl">
-                {/* Mockup Header */}
-                <div className="h-8 bg-[#0a0e17] flex items-center px-4 gap-2 border-b border-[#232f48]">
-                  <div className="w-3 h-3 rounded-full bg-[#ff5f57]" />
-                  <div className="w-3 h-3 rounded-full bg-[#febc2e]" />
-                  <div className="w-3 h-3 rounded-full bg-[#28c840]" />
-                  <div className="ml-4 flex-1 h-5 bg-[#1c2536] rounded-md flex items-center px-2 text-[10px] text-gray-500 font-mono">
-                    fashion-store.com/product/summer-jacket
-                  </div>
-                </div>
-
-                {/* Mockup Content */}
+            <div className="relative z-10 group flex justify-center lg:justify-end h-full">
+              <div className="absolute -inset-2 bg-gradient-brand rounded-[2.5rem] blur-xl opacity-20 group-hover:opacity-40 transition duration-1000" />
+              <div className="relative rounded-[2rem] bg-[#111722] border border-[#232f48] overflow-hidden w-full max-w-[450px] aspect-[3/4] shadow-2xl group cursor-col-resize select-none">
                 <div
-                  className="relative h-full w-full bg-cover bg-center"
-                  aria-label="Split screen showing a model on the left and the same model wearing a digitally applied yellow jacket on the right"
+                  className="absolute inset-0 bg-cover bg-top"
                   style={{
                     backgroundImage:
-                      'url("https://lh3.googleusercontent.com/aida-public/AB6AXuDMf0Btt1fIhQoNfv0c3dpHQl1JY7Oh_P6HtwswzYIZzGhLXbVaHFukQzpGvhpjIGbsKnUYVKKOKKOSwVBRP6evUPAC0EgQn3un8NZkZfJT9qOvNfhDKlqXFioYkUznT50h5F6aim6BkDR9JzaUsNhaINOsX17hu3nyCJGSFWDzxueV2WxyfIEH1r22z3BCsyPRLSdGyn1QC5sOSqnqVlE5cpndUO5LppHYKjOBagRhol782hjg9Sxw41gSU9OTnOyncBVfQGIjsR4")',
+                      'url("https://images.unsplash.com/photo-1581382575275-97901c2635b7?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
                   }}
                 >
-                  <div className="absolute inset-0 bg-black/40 backdrop-blur-[2px] flex items-center justify-center">
-                    <div className="bg-[#111722]/90 p-1 rounded-xl border border-[#324467] shadow-2xl flex gap-1 items-center">
-                      <div className="w-48 h-64 rounded-lg overflow-hidden relative">
-                        <div
-                          className="absolute inset-0 bg-cover bg-center"
-                          aria-label="Original model photo"
-                          style={{
-                            backgroundImage:
-                              'url("https://lh3.googleusercontent.com/aida-public/AB6AXuDIYZ9DwhRXyqZQIYAO80Veui5jXtAxJupMNR92BzyJjKh_ofgw1ac3UViTDP3vsU9DGTQnaH3GwUc7sU-3d3PmW6IFJnPM7NjN_lWCW4Zn-sYvO71eMgIB2sZwdY3FTDyuPfXOaHlliuTMDXimjPgFdCTfU_eZIltbgzjtNxmGiih4LQySOwrCXHHNntVqFEZSGLEsfk5nokwgewm2d_0HOOEQ8GyKOHskbjkDvD3G4R9Nhwau9NAjpJuEvvciroKmg6-UPCd0Mxg")',
-                          }}
-                        />
-                        <div className="absolute bottom-2 left-2 bg-black/60 px-2 py-1 rounded text-[10px] font-bold">
-                          BEFORE
-                        </div>
-                      </div>
-
-                      <div className="h-64 w-px bg-[#324467]" />
-
-                      <div className="w-48 h-64 rounded-lg overflow-hidden relative">
-                        <div
-                          className="absolute inset-0 bg-cover bg-center"
-                          aria-label="Model photo with AI applied clothing"
-                          style={{
-                            backgroundImage:
-                              'url("https://lh3.googleusercontent.com/aida-public/AB6AXuAzBpzu0SAKiy2E9dZb5W2ioZIL43fQrPJ8vDn4mxKCV1lPmxobtkfSXweFR5hleWS-e49oN1hIWWpyz_4vtnkvgYgXcrwJDNyw957UI_weAESc_IORPeDY6PRITqJjx3FbrqKKqBe9lS_BtJm1uE5BOVMhSaRx3gfvcMcRs-y3d5W1BL1CklG-J1qrmsCcFkXS954Pqu2jLoktXItemNyIAUankyz2DopUlcTGDal7q-PMkKJVxycZkTsoJ9krj0bh67KPhGXRtc8")',
-                          }}
-                        />
-                        <div className="absolute top-2 right-2 bg-gradient-brand text-black font-bold px-2 py-0.5 rounded text-[10px] flex items-center gap-1">
-                          <span className="material-symbols-outlined text-[12px]">
-                            auto_awesome
-                          </span>
-                          AI ON
-                        </div>
-                        <div className="absolute bottom-2 left-2 bg-black/60 px-2 py-1 rounded text-[10px] font-bold">
-                          AFTER
-                        </div>
-                      </div>
+                  <div className="absolute top-6 right-6 z-20">
+                    <div className="bg-black/80 backdrop-blur-md border border-white/10 text-white px-4 py-2 rounded-xl font-bold text-xs tracking-widest flex items-center gap-2 shadow-lg">
+                      <span className="material-symbols-outlined text-sm">
+                        person
+                      </span>
+                      ORIGINAL
                     </div>
                   </div>
                 </div>
+                <div
+                  className="absolute inset-0 bg-cover bg-top animate-hero-animation-mask group-hover:[animation-play-state:paused] will-change-[clip-path]"
+                  style={{
+                    backgroundImage:
+                      'url("https://lh3.googleusercontent.com/aida-public/AB6AXuCPGOkFOLa2tT-XSLKtLkOQg-u9Zp_o-R-AWpxRRBd8gQCTgQ3jcTiLsFvtjH_67tsNqik7e25qSSUkBhocoLdKaHoBB0yRFJ1TpltiyhtZersuBt7rRp5HZ2-otdcz2c_e8UxJGcEXCqVDMU1ffHpIt7ku9HB--HNF6G2ID2ttK7AvA4Dd6_hsO9c5a9n02-fi-yOHaWQcYRLs3T2dDEnTg0cRnLwRONCrni3NpcPNKW_3HxjSQ2wS8Wz4NdxDD21FhkB_fomzpnY")',
+                  }}
+                >
+                  <div className="absolute top-6 left-6 z-20">
+                    <div className="bg-gradient-brand text-black px-4 py-2 rounded-xl font-bold text-xs tracking-widest flex items-center gap-2 shadow-lg">
+                      <span className="material-symbols-outlined text-sm">
+                        auto_awesome
+                      </span>
+                      AI TRY-ON
+                    </div>
+                  </div>
+                </div>
+                <div className="absolute top-0 bottom-0 w-1 bg-white z-30 shadow-[0_0_20px_rgba(255,255,255,0.8)] animate-hero-animation-handle group-hover:[animation-play-state:paused] flex items-center justify-center will-change-[left]">
+                  <div className="w-12 h-12 bg-white rounded-full shadow-2xl flex items-center justify-center border-4 border-white text-primary hover:scale-110 transition-transform">
+                    <span className="material-symbols-outlined text-3xl font-bold">
+                      compare_arrows
+                    </span>
+                  </div>
+                </div>
+                <div className="absolute inset-0 pointer-events-none border-[12px] border-[#111722] rounded-[2rem] z-40" />
               </div>
             </div>
             {/* end right */}
