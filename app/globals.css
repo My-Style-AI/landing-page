@@ -134,3 +134,37 @@ a[href] {
 .animate-hero-animation-ai-badge {
   animation: hero-animation-ai-badge 4s ease-in-out infinite;
 }
+
+/* Hide scrollbar */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Horizontal scroll animation */
+@keyframes scroll-horizontal {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-320px * 6 - 1.5rem * 5));
+  }
+}
+
+.animate-scroll-horizontal {
+  animation: scroll-horizontal 30s linear infinite;
+}
+
+.animate-scroll-horizontal:hover {
+  animation-play-state: paused;
+}
+
+@media (hover: hover) {
+  .animate-scroll-horizontal:hover {
+    animation-play-state: paused;
+  }
+}

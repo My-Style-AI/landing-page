@@ -55,13 +55,6 @@ export default function Home() {
               >
                 How it Works
               </a>
-              <a
-                className="text-sm font-medium text-gray-300 hover:text-white transition-colors"
-                href="/coming-soon"
-                target="_blank"
-              >
-                Coming Soon
-              </a>
             </nav>
 
             {/* CTA */}
@@ -147,13 +140,6 @@ export default function Home() {
                   >
                     Benefits
                   </a>
-                  <a
-                    className="text-2xl font-bold text-white"
-                    href="/coming-soon"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    Coming Soon
-                  </a>
 
                   <div className="mt-10 grid grid-cols-1 gap-4">
                     <button
@@ -164,13 +150,16 @@ export default function Home() {
                       Add to Chrome
                     </button>
                     <button
-                      className="h-16 rounded-2xl border border-[#324467] bg-[#111722]/50 px-6 text-lg font-bold text-white hover:bg-[#111722] hover:border-gray-500"
+                      className="h-16 rounded-2xl border border-[#324467] bg-[#111722]/50 px-6 text-lg font-bold text-white hover:bg-[#111722] hover:border-gray-500 flex items-center justify-center gap-2"
                       onClick={() => {
                         setIsMobileMenuOpen(false);
                         setIsDemoOpen(true);
                       }}
                       type="button"
                     >
+                      <span className="material-symbols-outlined">
+                        play_circle
+                      </span>
                       Watch Demo
                     </button>
                   </div>
@@ -468,53 +457,103 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Feature 1 */}
-            <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#ff6b6b]/30 transition-all hover:translate-y-[-4px]">
-              <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
-                <span className="material-symbols-outlined text-white text-3xl">
-                  accessibility_new
-                </span>
+          <div className="overflow-x-auto scrollbar-hide -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8">
+            <div className="flex gap-6 min-w-max animate-scroll-horizontal">
+              {/* Feature 1 */}
+              <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#ff6b6b]/30 transition-all hover:translate-y-[-4px] w-[320px] shrink-0">
+                <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
+                  <span className="material-symbols-outlined text-white text-3xl">
+                    accessibility_new
+                  </span>
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-white">
+                  Body-Adaptive Fit
+                </h3>
+                <p className="text-gray-400 leading-relaxed">
+                  The AI maps the clothing to your specific measurements,
+                  showing exactly how tight or loose the fit will be.
+                </p>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">
-                Body-Adaptive Fit
-              </h3>
-              <p className="text-gray-400 leading-relaxed">
-                The AI maps the clothing to your specific measurements, showing
-                exactly how tight or loose the fit will be.
-              </p>
-            </div>
 
-            {/* Feature 2 */}
-            <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#feca57]/30 transition-all hover:translate-y-[-4px]">
-              <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
-                <span className="material-symbols-outlined text-white text-3xl">
-                  universal_currency_alt
-                </span>
+              {/* Feature 2 */}
+              <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#feca57]/30 transition-all hover:translate-y-[-4px] w-[320px] shrink-0">
+                <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
+                  <span className="material-symbols-outlined text-white text-3xl">
+                    universal_currency_alt
+                  </span>
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-white">
+                  Universal Compatibility
+                </h3>
+                <p className="text-gray-400 leading-relaxed">
+                  Works on 100+ top fashion sites including Zara, H&amp;M, ASOS,
+                  and more. No integration needed by the store.
+                </p>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">
-                Universal Compatibility
-              </h3>
-              <p className="text-gray-400 leading-relaxed">
-                Works on 100+ top fashion sites including Zara, H&amp;M, ASOS,
-                and more. No integration needed by the store.
-              </p>
-            </div>
 
-            {/* Feature 3 */}
-            <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#ff6b6b]/30 transition-all hover:translate-y-[-4px]">
-              <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
-                <span className="material-symbols-outlined text-white text-3xl">
-                  dresser
-                </span>
+              {/* Feature 3 */}
+              <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#ff6b6b]/30 transition-all hover:translate-y-[-4px] w-[320px] shrink-0">
+                <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
+                  <span className="material-symbols-outlined text-white text-3xl">
+                    dresser
+                  </span>
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-white">
+                  Virtual Wardrobe
+                </h3>
+                <p className="text-gray-400 leading-relaxed">
+                  Save your favorite tries to your digital closet. Mix and match
+                  items from different stores in one view.
+                </p>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">
-                Virtual Wardrobe
-              </h3>
-              <p className="text-gray-400 leading-relaxed">
-                Save your favorite tries to your digital closet. Mix and match
-                items from different stores in one view.
-              </p>
+
+              {/* Feature 4 */}
+              <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#135bec]/30 transition-all hover:translate-y-[-4px] w-[320px] shrink-0">
+                <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
+                  <span className="material-symbols-outlined text-white text-3xl">
+                    speed
+                  </span>
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-white">
+                  Lightning Fast
+                </h3>
+                <p className="text-gray-400 leading-relaxed">
+                  Get instant results in seconds. No waiting, no buffering—just
+                  fast, accurate try-on previews.
+                </p>
+              </div>
+
+              {/* Feature 5 */}
+              <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#feca57]/30 transition-all hover:translate-y-[-4px] w-[320px] shrink-0">
+                <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
+                  <span className="material-symbols-outlined text-white text-3xl">
+                    compare
+                  </span>
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-white">
+                  Side-by-Side Compare
+                </h3>
+                <p className="text-gray-400 leading-relaxed">
+                  Use the interactive slider to seamlessly compare your original
+                  photo with the AI-generated try-on result.
+                </p>
+              </div>
+
+              {/* Feature 6 */}
+              <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#ff6b6b]/30 transition-all hover:translate-y-[-4px] w-[320px] shrink-0">
+                <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
+                  <span className="material-symbols-outlined text-white text-3xl">
+                    history
+                  </span>
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-white">
+                  Try-On History
+                </h3>
+                <p className="text-gray-400 leading-relaxed">
+                  Browse your previous try-ons anytime. Revisit your favorite
+                  looks and share them with friends.
+                </p>
+              </div>
             </div>
           </div>
         </div>
