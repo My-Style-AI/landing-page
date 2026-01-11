@@ -458,9 +458,9 @@ export default function Home() {
           </div>
 
           <div className="overflow-x-auto scrollbar-hide -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8">
-            <div className="flex gap-6 min-w-max animate-scroll-horizontal">
+            <div className="flex gap-6 min-w-max animate-scroll-horizontal lg:max-w-[calc(400px*3+1.5rem*2)] lg:mx-auto lg:overflow-hidden">
               {/* Feature 1 */}
-              <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#ff6b6b]/30 transition-all hover:translate-y-[-4px] w-[320px] shrink-0">
+              <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#ff6b6b]/30 transition-all hover:translate-y-[-4px] w-[320px] lg:w-[400px] shrink-0">
                 <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
                   <span className="material-symbols-outlined text-white text-3xl">
                     accessibility_new
@@ -476,7 +476,7 @@ export default function Home() {
               </div>
 
               {/* Feature 2 */}
-              <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#feca57]/30 transition-all hover:translate-y-[-4px] w-[320px] shrink-0">
+              <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#feca57]/30 transition-all hover:translate-y-[-4px] w-[320px] lg:w-[400px] shrink-0">
                 <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
                   <span className="material-symbols-outlined text-white text-3xl">
                     universal_currency_alt
@@ -492,7 +492,7 @@ export default function Home() {
               </div>
 
               {/* Feature 3 */}
-              <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#ff6b6b]/30 transition-all hover:translate-y-[-4px] w-[320px] shrink-0">
+              <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#ff6b6b]/30 transition-all hover:translate-y-[-4px] w-[320px] lg:w-[400px] shrink-0">
                 <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
                   <span className="material-symbols-outlined text-white text-3xl">
                     dresser
@@ -508,7 +508,7 @@ export default function Home() {
               </div>
 
               {/* Feature 4 */}
-              <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#135bec]/30 transition-all hover:translate-y-[-4px] w-[320px] shrink-0">
+              <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#135bec]/30 transition-all hover:translate-y-[-4px] w-[320px] lg:w-[400px] shrink-0">
                 <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
                   <span className="material-symbols-outlined text-white text-3xl">
                     speed
@@ -524,7 +524,7 @@ export default function Home() {
               </div>
 
               {/* Feature 5 */}
-              <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#feca57]/30 transition-all hover:translate-y-[-4px] w-[320px] shrink-0">
+              <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#feca57]/30 transition-all hover:translate-y-[-4px] w-[320px] lg:w-[400px] shrink-0">
                 <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
                   <span className="material-symbols-outlined text-white text-3xl">
                     compare
@@ -540,7 +540,7 @@ export default function Home() {
               </div>
 
               {/* Feature 6 */}
-              <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#ff6b6b]/30 transition-all hover:translate-y-[-4px] w-[320px] shrink-0">
+              <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#ff6b6b]/30 transition-all hover:translate-y-[-4px] w-[320px] lg:w-[400px] shrink-0">
                 <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
                   <span className="material-symbols-outlined text-white text-3xl">
                     history
