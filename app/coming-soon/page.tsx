@@ -212,7 +212,8 @@ export default function ComingSoonPage() {
           </div>
           <a
             className="inline-flex items-center justify-center h-12 rounded-xl bg-[#135bec] px-6 text-sm font-bold text-white hover:bg-[#1d6bf5] transition-colors"
-            href="mailto:tryon.style.ai@gmail.com?subject=TryB4Buy%20Roadmap%20Feedback&body=Feature%20request%3A%0A%0AWhy%20it%20matters%3A%0A%0A"
+            href="https://docs.google.com/forms/d/e/1FAIpQLScXTUCnfWs4ekkP5FsUvBi_Im_Dl8ES6xiU-YSYC9PfTtwdog/viewform"
+            target="_blank"
           >
             Send feedback
           </a>
