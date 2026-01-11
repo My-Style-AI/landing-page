@@ -472,20 +472,6 @@ export default function Home() {
           <div className="overflow-x-auto scrollbar-hide -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8">
             <div className="flex gap-6 min-w-max animate-scroll-horizontal lg:max-w-[calc(400px*3+1.5rem*2)] lg:mx-auto lg:overflow-hidden">
               {/* Feature 1 */}
-              <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#ff6b6b]/30 transition-all hover:translate-y-[-4px] w-[320px] lg:w-[400px] shrink-0">
-                <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
-                  <span className="material-symbols-outlined text-white text-3xl">
-                    accessibility_new
-                  </span>
-                </div>
-                <h3 className="text-xl font-bold mb-3 text-white">
-                  Body-Adaptive Fit
-                </h3>
-                <p className="text-gray-400 leading-relaxed">
-                  The AI maps the clothing to your specific measurements,
-                  showing exactly how tight or loose the fit will be.
-                </p>
-              </div>
 
               {/* Feature 2 */}
               <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#feca57]/30 transition-all hover:translate-y-[-4px] w-[320px] lg:w-[400px] shrink-0">
@@ -498,8 +484,9 @@ export default function Home() {
                   Universal Compatibility
                 </h3>
                 <p className="text-gray-400 leading-relaxed">
-                  Works on 100+ top fashion sites including Zara, H&amp;M, ASOS,
-                  and more. No integration needed by the store.
+                  Works on the 3 major e-commerce platforms including Amazon,
+                  Temu, and Lululemon, with additional support for 100+ top
+                  fashion sites coming soon, No integration needed by the store.
                 </p>
               </div>
 
@@ -552,6 +539,102 @@ export default function Home() {
               </div>
 
               {/* Feature 6 */}
+              <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#ff6b6b]/30 transition-all hover:translate-y-[-4px] w-[320px] lg:w-[400px] shrink-0">
+                <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
+                  <span className="material-symbols-outlined text-white text-3xl">
+                    history
+                  </span>
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-white">
+                  Try-On History
+                </h3>
+                <p className="text-gray-400 leading-relaxed">
+                  Browse your previous try-ons anytime. Revisit your favorite
+                  looks and share them with friends.
+                </p>
+              </div>
+
+              {/* Duplicate Feature 1 */}
+              <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#ff6b6b]/30 transition-all hover:translate-y-[-4px] w-[320px] lg:w-[400px] shrink-0">
+                <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
+                  <span className="material-symbols-outlined text-white text-3xl">
+                    accessibility_new
+                  </span>
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-white">
+                  Body-Adaptive Fit
+                </h3>
+                <p className="text-gray-400 leading-relaxed">
+                  The AI maps the clothing to your specific measurements,
+                  showing exactly how tight or loose the fit will be.
+                </p>
+              </div>
+
+              {/* Duplicate Feature 2 */}
+              <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#feca57]/30 transition-all hover:translate-y-[-4px] w-[320px] lg:w-[400px] shrink-0">
+                <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
+                  <span className="material-symbols-outlined text-white text-3xl">
+                    universal_currency_alt
+                  </span>
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-white">
+                  Universal Compatibility
+                </h3>
+                <p className="text-gray-400 leading-relaxed">
+                  Works on 100+ top fashion sites including Zara, H&amp;M, ASOS,
+                  and more. No integration needed by the store.
+                </p>
+              </div>
+
+              {/* Duplicate Feature 3 */}
+              <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#ff6b6b]/30 transition-all hover:translate-y-[-4px] w-[320px] lg:w-[400px] shrink-0">
+                <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
+                  <span className="material-symbols-outlined text-white text-3xl">
+                    dresser
+                  </span>
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-white">
+                  Virtual Wardrobe
+                </h3>
+                <p className="text-gray-400 leading-relaxed">
+                  Save your favorite tries to your digital closet. Mix and match
+                  items from different stores in one view.
+                </p>
+              </div>
+
+              {/* Duplicate Feature 4 */}
+              <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#135bec]/30 transition-all hover:translate-y-[-4px] w-[320px] lg:w-[400px] shrink-0">
+                <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
+                  <span className="material-symbols-outlined text-white text-3xl">
+                    speed
+                  </span>
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-white">
+                  Lightning Fast
+                </h3>
+                <p className="text-gray-400 leading-relaxed">
+                  Get instant results in seconds. No waiting, no buffering—just
+                  fast, accurate try-on previews.
+                </p>
+              </div>
+
+              {/* Duplicate Feature 5 */}
+              <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#feca57]/30 transition-all hover:translate-y-[-4px] w-[320px] lg:w-[400px] shrink-0">
+                <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
+                  <span className="material-symbols-outlined text-white text-3xl">
+                    compare
+                  </span>
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-white">
+                  Side-by-Side Compare
+                </h3>
+                <p className="text-gray-400 leading-relaxed">
+                  Use the interactive slider to seamlessly compare your original
+                  photo with the AI-generated try-on result.
+                </p>
+              </div>
+
+              {/* Duplicate Feature 6 */}
               <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#ff6b6b]/30 transition-all hover:translate-y-[-4px] w-[320px] lg:w-[400px] shrink-0">
                 <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
                   <span className="material-symbols-outlined text-white text-3xl">

@@ -146,7 +146,7 @@ a[href] {
 }
 
 /* Horizontal scroll animation */
-@keyframes scroll-horizontal {
+@keyframes scroll-horizontal-mobile {
   0% {
     transform: translateX(0);
   }
@@ -155,8 +155,23 @@ a[href] {
   }
 }
 
+@keyframes scroll-horizontal-desktop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-400px * 6 - 1.5rem * 5));
+  }
+}
+
 .animate-scroll-horizontal {
-  animation: scroll-horizontal 30s linear infinite;
+  animation: scroll-horizontal-mobile 30s linear infinite;
+}
+
+@media (min-width: 1024px) {
+  .animate-scroll-horizontal {
+    animation-name: scroll-horizontal-desktop;
+  }
 }
 
 .animate-scroll-horizontal:hover {
