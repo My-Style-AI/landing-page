@@ -265,11 +265,10 @@ export default function Home() {
                 <div
                   className="absolute inset-0 bg-cover bg-top"
                   style={{
-                    backgroundImage:
-                      'url("https://images.unsplash.com/photo-1581382575275-97901c2635b7?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
+                    backgroundImage: 'url("/original_photo.png")',
                   }}
                 >
-                  <div className="absolute top-6 right-6 z-20">
+                  <div className="absolute top-6 right-6 z-20 animate-hero-animation-original-badge group-hover:[animation-play-state:paused] will-change-[opacity,visibility]">
                     <div className="bg-black/80 backdrop-blur-md border border-white/10 text-white px-4 py-2 rounded-xl font-bold text-xs tracking-widest flex items-center gap-2 shadow-lg">
                       <span className="material-symbols-outlined text-sm">
                         person
@@ -281,11 +280,10 @@ export default function Home() {
                 <div
                   className="absolute inset-0 bg-cover bg-top animate-hero-animation-mask group-hover:[animation-play-state:paused] will-change-[clip-path]"
                   style={{
-                    backgroundImage:
-                      'url("https://lh3.googleusercontent.com/aida-public/AB6AXuCPGOkFOLa2tT-XSLKtLkOQg-u9Zp_o-R-AWpxRRBd8gQCTgQ3jcTiLsFvtjH_67tsNqik7e25qSSUkBhocoLdKaHoBB0yRFJ1TpltiyhtZersuBt7rRp5HZ2-otdcz2c_e8UxJGcEXCqVDMU1ffHpIt7ku9HB--HNF6G2ID2ttK7AvA4Dd6_hsO9c5a9n02-fi-yOHaWQcYRLs3T2dDEnTg0cRnLwRONCrni3NpcPNKW_3HxjSQ2wS8Wz4NdxDD21FhkB_fomzpnY")',
+                    backgroundImage: 'url("/ai_try_on.png")',
                   }}
                 >
-                  <div className="absolute top-6 left-6 z-20">
+                  <div className="absolute top-6 left-6 z-20 animate-hero-animation-ai-badge group-hover:[animation-play-state:paused] will-change-[opacity,visibility]">
                     <div className="bg-gradient-brand text-black px-4 py-2 rounded-xl font-bold text-xs tracking-widest flex items-center gap-2 shadow-lg">
                       <span className="material-symbols-outlined text-sm">
                         auto_awesome
@@ -295,9 +293,12 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="absolute top-0 bottom-0 w-1 bg-white z-30 shadow-[0_0_20px_rgba(255,255,255,0.8)] animate-hero-animation-handle group-hover:[animation-play-state:paused] flex items-center justify-center will-change-[left]">
-                  <div className="w-12 h-12 bg-white rounded-full shadow-2xl flex items-center justify-center border-4 border-white text-primary hover:scale-110 transition-transform">
-                    <span className="material-symbols-outlined text-3xl font-bold">
-                      compare_arrows
+                  <div className="w-12 h-12 bg-white rounded-full shadow-2xl flex items-center justify-center border-4 border-white text-primary hover:scale-110 transition-transform gap-0.5">
+                    <span className="material-symbols-outlined text-2xl font-bold">
+                      arrow_back
+                    </span>
+                    <span className="material-symbols-outlined text-2xl font-bold">
+                      arrow_forward
                     </span>
                   </div>
                 </div>
