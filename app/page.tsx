@@ -55,13 +55,6 @@ export default function Home() {
               >
                 How it Works
               </a>
-              <a
-                className="text-sm font-medium text-gray-300 hover:text-white transition-colors"
-                href="/coming-soon"
-                target="_blank"
-              >
-                Coming Soon
-              </a>
             </nav>
 
             {/* CTA */}
@@ -147,13 +140,6 @@ export default function Home() {
                   >
                     Benefits
                   </a>
-                  <a
-                    className="text-2xl font-bold text-white"
-                    href="/coming-soon"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    Coming Soon
-                  </a>
 
                   <div className="mt-10 grid grid-cols-1 gap-4">
                     <button
@@ -164,13 +150,16 @@ export default function Home() {
                       Add to Chrome
                     </button>
                     <button
-                      className="h-16 rounded-2xl border border-[#324467] bg-[#111722]/50 px-6 text-lg font-bold text-white hover:bg-[#111722] hover:border-gray-500"
+                      className="h-16 rounded-2xl border border-[#324467] bg-[#111722]/50 px-6 text-lg font-bold text-white hover:bg-[#111722] hover:border-gray-500 flex items-center justify-center gap-2"
                       onClick={() => {
                         setIsMobileMenuOpen(false);
                         setIsDemoOpen(true);
                       }}
                       type="button"
                     >
+                      <span className="material-symbols-outlined">
+                        play_circle
+                      </span>
                       Watch Demo
                     </button>
                   </div>
@@ -259,68 +248,62 @@ export default function Home() {
             </div>
 
             {/* Right Visual */}
-            <div className="relative z-10 group">
-              <div className="absolute -inset-1 bg-gradient-brand rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200" />
-              <div className="relative rounded-2xl bg-[#111722] border border-[#232f48] overflow-hidden aspect-4/3 shadow-2xl">
-                {/* Mockup Header */}
-                <div className="h-8 bg-[#0a0e17] flex items-center px-4 gap-2 border-b border-[#232f48]">
-                  <div className="w-3 h-3 rounded-full bg-[#ff5f57]" />
-                  <div className="w-3 h-3 rounded-full bg-[#febc2e]" />
-                  <div className="w-3 h-3 rounded-full bg-[#28c840]" />
-                  <div className="ml-4 flex-1 h-5 bg-[#1c2536] rounded-md flex items-center px-2 text-[10px] text-gray-500 font-mono">
-                    fashion-store.com/product/summer-jacket
-                  </div>
-                </div>
-
-                {/* Mockup Content */}
+            <div className="relative z-10 group flex justify-center lg:justify-end h-full">
+              <div className="absolute -inset-2 bg-gradient-brand rounded-[2.5rem] blur-xl opacity-20 group-hover:opacity-40 transition duration-1000" />
+              <div className="relative rounded-[2rem] bg-[#111722] border border-[#232f48] overflow-hidden w-full max-w-[450px] aspect-[3/4] shadow-2xl group cursor-col-resize select-none">
                 <div
-                  className="relative h-full w-full bg-cover bg-center"
-                  aria-label="Split screen showing a model on the left and the same model wearing a digitally applied yellow jacket on the right"
+                  className="absolute inset-0 bg-cover bg-top"
                   style={{
-                    backgroundImage:
-                      'url("https://lh3.googleusercontent.com/aida-public/AB6AXuDMf0Btt1fIhQoNfv0c3dpHQl1JY7Oh_P6HtwswzYIZzGhLXbVaHFukQzpGvhpjIGbsKnUYVKKOKKOSwVBRP6evUPAC0EgQn3un8NZkZfJT9qOvNfhDKlqXFioYkUznT50h5F6aim6BkDR9JzaUsNhaINOsX17hu3nyCJGSFWDzxueV2WxyfIEH1r22z3BCsyPRLSdGyn1QC5sOSqnqVlE5cpndUO5LppHYKjOBagRhol782hjg9Sxw41gSU9OTnOyncBVfQGIjsR4")',
+                    backgroundImage: 'url("/original_photo.png")',
                   }}
                 >
-                  <div className="absolute inset-0 bg-black/40 backdrop-blur-[2px] flex items-center justify-center">
-                    <div className="bg-[#111722]/90 p-1 rounded-xl border border-[#324467] shadow-2xl flex gap-1 items-center">
-                      <div className="w-48 h-64 rounded-lg overflow-hidden relative">
-                        <div
-                          className="absolute inset-0 bg-cover bg-center"
-                          aria-label="Original model photo"
-                          style={{
-                            backgroundImage:
-                              'url("https://lh3.googleusercontent.com/aida-public/AB6AXuDIYZ9DwhRXyqZQIYAO80Veui5jXtAxJupMNR92BzyJjKh_ofgw1ac3UViTDP3vsU9DGTQnaH3GwUc7sU-3d3PmW6IFJnPM7NjN_lWCW4Zn-sYvO71eMgIB2sZwdY3FTDyuPfXOaHlliuTMDXimjPgFdCTfU_eZIltbgzjtNxmGiih4LQySOwrCXHHNntVqFEZSGLEsfk5nokwgewm2d_0HOOEQ8GyKOHskbjkDvD3G4R9Nhwau9NAjpJuEvvciroKmg6-UPCd0Mxg")',
-                          }}
-                        />
-                        <div className="absolute bottom-2 left-2 bg-black/60 px-2 py-1 rounded text-[10px] font-bold">
-                          BEFORE
-                        </div>
-                      </div>
-
-                      <div className="h-64 w-px bg-[#324467]" />
-
-                      <div className="w-48 h-64 rounded-lg overflow-hidden relative">
-                        <div
-                          className="absolute inset-0 bg-cover bg-center"
-                          aria-label="Model photo with AI applied clothing"
-                          style={{
-                            backgroundImage:
-                              'url("https://lh3.googleusercontent.com/aida-public/AB6AXuAzBpzu0SAKiy2E9dZb5W2ioZIL43fQrPJ8vDn4mxKCV1lPmxobtkfSXweFR5hleWS-e49oN1hIWWpyz_4vtnkvgYgXcrwJDNyw957UI_weAESc_IORPeDY6PRITqJjx3FbrqKKqBe9lS_BtJm1uE5BOVMhSaRx3gfvcMcRs-y3d5W1BL1CklG-J1qrmsCcFkXS954Pqu2jLoktXItemNyIAUankyz2DopUlcTGDal7q-PMkKJVxycZkTsoJ9krj0bh67KPhGXRtc8")',
-                          }}
-                        />
-                        <div className="absolute top-2 right-2 bg-gradient-brand text-black font-bold px-2 py-0.5 rounded text-[10px] flex items-center gap-1">
-                          <span className="material-symbols-outlined text-[12px]">
-                            auto_awesome
-                          </span>
-                          AI ON
-                        </div>
-                        <div className="absolute bottom-2 left-2 bg-black/60 px-2 py-1 rounded text-[10px] font-bold">
-                          AFTER
-                        </div>
-                      </div>
+                  <div className="absolute top-6 right-6 z-20 animate-hero-animation-original-badge group-hover:[animation-play-state:paused] will-change-[opacity,visibility]">
+                    <div className="bg-black/80 backdrop-blur-md border border-white/10 text-white px-4 py-2 rounded-xl font-bold text-xs tracking-widest flex items-center gap-2 shadow-lg">
+                      <span className="material-symbols-outlined text-sm">
+                        person
+                      </span>
+                      ORIGINAL
                     </div>
                   </div>
                 </div>
+                <div
+                  className="absolute inset-0 bg-cover bg-top animate-hero-animation-mask group-hover:[animation-play-state:paused] will-change-[clip-path]"
+                  style={{
+                    backgroundImage: 'url("/ai_try_on.png")',
+                  }}
+                >
+                  <div className="absolute top-6 left-6 z-20 animate-hero-animation-ai-badge group-hover:[animation-play-state:paused] will-change-[opacity,visibility]">
+                    <div className="bg-gradient-brand text-black px-4 py-2 rounded-xl font-bold text-xs tracking-widest flex items-center gap-2 shadow-lg">
+                      <span className="material-symbols-outlined text-sm">
+                        auto_awesome
+                      </span>
+                      AI TRY-ON
+                    </div>
+                  </div>
+                </div>
+                <div className="absolute top-0 bottom-0 w-1 bg-white z-30 shadow-[0_0_20px_rgba(255,255,255,0.8)] animate-hero-animation-handle group-hover:[animation-play-state:paused] flex items-center justify-center will-change-[left]">
+                  <div className="w-12 h-12 bg-white rounded-full shadow-2xl flex items-center justify-center border-4 border-white text-primary hover:scale-110 transition-transform">
+                    <span
+                      className="material-symbols-outlined text-3xl font-bold text-black"
+                      style={{
+                        color: "rgb(19 91 236 / var(--tw-text-opacity, 1))",
+                        fontVariationSettings: "'FILL' 1, 'wght' 900",
+                      }}
+                    >
+                      arrow_back
+                    </span>
+                    <span
+                      className="material-symbols-outlined text-xl font-black"
+                      style={{
+                        color: "rgb(19 91 236 / var(--tw-text-opacity, 1))",
+                        fontVariationSettings: "'FILL' 1, 'wght' 900",
+                      }}
+                    >
+                      arrow_forward
+                    </span>
+                  </div>
+                </div>
+                <div className="absolute inset-0 pointer-events-none border-[12px] border-[#111722] rounded-[2rem] z-40" />
               </div>
             </div>
             {/* end right */}
@@ -486,53 +469,186 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Feature 1 */}
-            <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#ff6b6b]/30 transition-all hover:translate-y-[-4px]">
-              <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
-                <span className="material-symbols-outlined text-white text-3xl">
-                  accessibility_new
-                </span>
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-white">
-                Body-Adaptive Fit
-              </h3>
-              <p className="text-gray-400 leading-relaxed">
-                The AI maps the clothing to your specific measurements, showing
-                exactly how tight or loose the fit will be.
-              </p>
-            </div>
+          <div className="overflow-x-auto scrollbar-hide -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8">
+            <div className="flex gap-6 min-w-max animate-scroll-horizontal lg:max-w-[calc(400px*3+1.5rem*2)] lg:mx-auto lg:overflow-hidden">
+              {/* Feature 1 */}
 
-            {/* Feature 2 */}
-            <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#feca57]/30 transition-all hover:translate-y-[-4px]">
-              <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
-                <span className="material-symbols-outlined text-white text-3xl">
-                  universal_currency_alt
-                </span>
+              {/* Feature 2 */}
+              <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#feca57]/30 transition-all hover:translate-y-[-4px] w-[320px] lg:w-[400px] shrink-0">
+                <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
+                  <span className="material-symbols-outlined text-white text-3xl">
+                    universal_currency_alt
+                  </span>
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-white">
+                  Universal Compatibility
+                </h3>
+                <p className="text-gray-400 leading-relaxed">
+                  Works on the 3 major e-commerce platforms including Amazon,
+                  Temu, and Lululemon, with additional support for 100+ top
+                  fashion sites coming soon, No integration needed by the store.
+                </p>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">
-                Universal Compatibility
-              </h3>
-              <p className="text-gray-400 leading-relaxed">
-                Works on 100+ top fashion sites including Zara, H&amp;M, ASOS,
-                and more. No integration needed by the store.
-              </p>
-            </div>
 
-            {/* Feature 3 */}
-            <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#ff6b6b]/30 transition-all hover:translate-y-[-4px]">
-              <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
-                <span className="material-symbols-outlined text-white text-3xl">
-                  dresser
-                </span>
+              {/* Feature 3 */}
+              <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#ff6b6b]/30 transition-all hover:translate-y-[-4px] w-[320px] lg:w-[400px] shrink-0">
+                <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
+                  <span className="material-symbols-outlined text-white text-3xl">
+                    dresser
+                  </span>
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-white">
+                  Virtual Wardrobe
+                </h3>
+                <p className="text-gray-400 leading-relaxed">
+                  Save your favorite tries to your digital closet. Mix and match
+                  items from different stores in one view.
+                </p>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">
-                Virtual Wardrobe
-              </h3>
-              <p className="text-gray-400 leading-relaxed">
-                Save your favorite tries to your digital closet. Mix and match
-                items from different stores in one view.
-              </p>
+
+              {/* Feature 4 */}
+              <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#135bec]/30 transition-all hover:translate-y-[-4px] w-[320px] lg:w-[400px] shrink-0">
+                <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
+                  <span className="material-symbols-outlined text-white text-3xl">
+                    speed
+                  </span>
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-white">
+                  Lightning Fast
+                </h3>
+                <p className="text-gray-400 leading-relaxed">
+                  Get instant results in seconds. No waiting, no buffering—just
+                  fast, accurate try-on previews.
+                </p>
+              </div>
+
+              {/* Feature 5 */}
+              <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#feca57]/30 transition-all hover:translate-y-[-4px] w-[320px] lg:w-[400px] shrink-0">
+                <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
+                  <span className="material-symbols-outlined text-white text-3xl">
+                    compare
+                  </span>
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-white">
+                  Side-by-Side Compare
+                </h3>
+                <p className="text-gray-400 leading-relaxed">
+                  Use the interactive slider to seamlessly compare your original
+                  photo with the AI-generated try-on result.
+                </p>
+              </div>
+
+              {/* Feature 6 */}
+              <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#ff6b6b]/30 transition-all hover:translate-y-[-4px] w-[320px] lg:w-[400px] shrink-0">
+                <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
+                  <span className="material-symbols-outlined text-white text-3xl">
+                    history
+                  </span>
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-white">
+                  Try-On History
+                </h3>
+                <p className="text-gray-400 leading-relaxed">
+                  Browse your previous try-ons anytime. Revisit your favorite
+                  looks and share them with friends.
+                </p>
+              </div>
+
+              {/* Duplicate Feature 1 */}
+              <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#ff6b6b]/30 transition-all hover:translate-y-[-4px] w-[320px] lg:w-[400px] shrink-0">
+                <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
+                  <span className="material-symbols-outlined text-white text-3xl">
+                    accessibility_new
+                  </span>
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-white">
+                  Body-Adaptive Fit
+                </h3>
+                <p className="text-gray-400 leading-relaxed">
+                  The AI maps the clothing to your specific measurements,
+                  showing exactly how tight or loose the fit will be.
+                </p>
+              </div>
+
+              {/* Duplicate Feature 2 */}
+              <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#feca57]/30 transition-all hover:translate-y-[-4px] w-[320px] lg:w-[400px] shrink-0">
+                <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
+                  <span className="material-symbols-outlined text-white text-3xl">
+                    universal_currency_alt
+                  </span>
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-white">
+                  Universal Compatibility
+                </h3>
+                <p className="text-gray-400 leading-relaxed">
+                  Works on 100+ top fashion sites including Zara, H&amp;M, ASOS,
+                  and more. No integration needed by the store.
+                </p>
+              </div>
+
+              {/* Duplicate Feature 3 */}
+              <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#ff6b6b]/30 transition-all hover:translate-y-[-4px] w-[320px] lg:w-[400px] shrink-0">
+                <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
+                  <span className="material-symbols-outlined text-white text-3xl">
+                    dresser
+                  </span>
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-white">
+                  Virtual Wardrobe
+                </h3>
+                <p className="text-gray-400 leading-relaxed">
+                  Save your favorite tries to your digital closet. Mix and match
+                  items from different stores in one view.
+                </p>
+              </div>
+
+              {/* Duplicate Feature 4 */}
+              <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#135bec]/30 transition-all hover:translate-y-[-4px] w-[320px] lg:w-[400px] shrink-0">
+                <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
+                  <span className="material-symbols-outlined text-white text-3xl">
+                    speed
+                  </span>
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-white">
+                  Lightning Fast
+                </h3>
+                <p className="text-gray-400 leading-relaxed">
+                  Get instant results in seconds. No waiting, no buffering—just
+                  fast, accurate try-on previews.
+                </p>
+              </div>
+
+              {/* Duplicate Feature 5 */}
+              <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#feca57]/30 transition-all hover:translate-y-[-4px] w-[320px] lg:w-[400px] shrink-0">
+                <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
+                  <span className="material-symbols-outlined text-white text-3xl">
+                    compare
+                  </span>
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-white">
+                  Side-by-Side Compare
+                </h3>
+                <p className="text-gray-400 leading-relaxed">
+                  Use the interactive slider to seamlessly compare your original
+                  photo with the AI-generated try-on result.
+                </p>
+              </div>
+
+              {/* Duplicate Feature 6 */}
+              <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#ff6b6b]/30 transition-all hover:translate-y-[-4px] w-[320px] lg:w-[400px] shrink-0">
+                <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
+                  <span className="material-symbols-outlined text-white text-3xl">
+                    history
+                  </span>
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-white">
+                  Try-On History
+                </h3>
+                <p className="text-gray-400 leading-relaxed">
+                  Browse your previous try-ons anytime. Revisit your favorite
+                  looks and share them with friends.
+                </p>
+              </div>
             </div>
           </div>
         </div>

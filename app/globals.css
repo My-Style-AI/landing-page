@@ -47,3 +47,139 @@ a[href] {
 ::-webkit-scrollbar-thumb:hover {
   background: #324467;
 }
+
+/* Hero animation for before/after slider */
+@keyframes hero-animation-mask {
+  0% {
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  }
+  50% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  100% {
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  }
+}
+
+@keyframes hero-animation-handle {
+  0% {
+    left: 0%;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes hero-animation-original-badge {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  40% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  60% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes hero-animation-ai-badge {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  40% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+}
+
+.animate-hero-animation-mask {
+  animation: hero-animation-mask 4s ease-in-out infinite;
+}
+
+.animate-hero-animation-handle {
+  animation: hero-animation-handle 4s ease-in-out infinite;
+}
+
+.animate-hero-animation-original-badge {
+  animation: hero-animation-original-badge 4s ease-in-out infinite;
+}
+
+.animate-hero-animation-ai-badge {
+  animation: hero-animation-ai-badge 4s ease-in-out infinite;
+}
+
+/* Hide scrollbar */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Horizontal scroll animation */
+@keyframes scroll-horizontal-mobile {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-320px * 6 - 1.5rem * 5));
+  }
+}
+
+@keyframes scroll-horizontal-desktop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-400px * 6 - 1.5rem * 5));
+  }
+}
+
+.animate-scroll-horizontal {
+  animation: scroll-horizontal-mobile 30s linear infinite;
+}
+
+@media (min-width: 1024px) {
+  .animate-scroll-horizontal {
+    animation-name: scroll-horizontal-desktop;
+  }
+}
+
+.animate-scroll-horizontal:hover {
+  animation-play-state: paused;
+}
+
+@media (hover: hover) {
+  .animate-scroll-horizontal:hover {
+    animation-play-state: paused;
+  }
+}
