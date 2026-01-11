@@ -282,11 +282,23 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="absolute top-0 bottom-0 w-1 bg-white z-30 shadow-[0_0_20px_rgba(255,255,255,0.8)] animate-hero-animation-handle group-hover:[animation-play-state:paused] flex items-center justify-center will-change-[left]">
-                  <div className="w-12 h-12 bg-white rounded-full shadow-2xl flex items-center justify-center border-4 border-white text-primary hover:scale-110 transition-transform gap-0.5">
-                    <span className="material-symbols-outlined text-2xl font-bold">
+                  <div className="w-12 h-12 bg-white rounded-full shadow-2xl flex items-center justify-center border-4 border-white text-primary hover:scale-110 transition-transform">
+                    <span
+                      className="material-symbols-outlined text-3xl font-bold text-black"
+                      style={{
+                        color: "rgb(19 91 236 / var(--tw-text-opacity, 1))",
+                        fontVariationSettings: "'FILL' 1, 'wght' 900",
+                      }}
+                    >
                       arrow_back
                     </span>
-                    <span className="material-symbols-outlined text-2xl font-bold">
+                    <span
+                      className="material-symbols-outlined text-xl font-black"
+                      style={{
+                        color: "rgb(19 91 236 / var(--tw-text-opacity, 1))",
+                        fontVariationSettings: "'FILL' 1, 'wght' 900",
+                      }}
+                    >
                       arrow_forward
                     </span>
                   </div>
