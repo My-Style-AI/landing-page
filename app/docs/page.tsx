@@ -262,7 +262,9 @@ export default function DocsPage() {
                   </h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
                     <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4">
-                      <p className="text-sm text-gray-300">Shirts (dress shirts, casual shirts)</p>
+                      <p className="text-sm text-gray-300">
+                        Shirts (dress shirts, casual shirts)
+                      </p>
                     </div>
                     <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4">
                       <p className="text-sm text-gray-300">T-shirts</p>
@@ -576,8 +578,8 @@ export default function DocsPage() {
                         Single person only
                       </h3>
                       <p className="text-gray-400">
-                        No group photos — the AI works best with photos containing
-                        only one person.
+                        No group photos — the AI works best with photos
+                        containing only one person.
                       </p>
                     </div>
                   </div>
@@ -595,8 +597,8 @@ export default function DocsPage() {
                         Full body visible
                       </h3>
                       <p className="text-gray-400">
-                        Head to feet in frame — ensure your entire body is visible
-                        from head to toe.
+                        Head to feet in frame — ensure your entire body is
+                        visible from head to toe.
                       </p>
                     </div>
                   </div>
@@ -735,10 +737,10 @@ export default function DocsPage() {
                     title: "Fashion Enthusiasts",
                     body: "Experiment with different styles and see how various items complement your look.",
                   },
-                  {
+                  /* {
                     title: "Size-Conscious Buyers",
                     body: "Visualize how different sizes and styles fit your body type.",
-                  },
+                  }, */
                   {
                     title: "Time-Saving Shoppers",
                     body: "Quickly preview multiple items without physical try-ons or returns.",
