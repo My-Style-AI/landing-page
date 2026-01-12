@@ -304,6 +304,14 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="absolute inset-0 pointer-events-none border-[12px] border-[#111722] rounded-[2rem] z-40" />
+                {/* Product Image Thumbnail */}
+                <div className="absolute bottom-4 left-4 z-30">
+                  <img
+                    src="/product_image.png"
+                    alt="Product"
+                    className="w-20 h-[120px] object-cover rounded-lg border-2 border-white/20 shadow-lg"
+                  />
+                </div>
               </div>
             </div>
             {/* end right */}
@@ -554,22 +562,6 @@ export default function Home() {
                 </p>
               </div>
 
-              {/* Duplicate Feature 1 */}
-              <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#ff6b6b]/30 transition-all hover:translate-y-[-4px] w-[320px] lg:w-[400px] shrink-0">
-                <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
-                  <span className="material-symbols-outlined text-white text-3xl">
-                    accessibility_new
-                  </span>
-                </div>
-                <h3 className="text-xl font-bold mb-3 text-white">
-                  Body-Adaptive Fit
-                </h3>
-                <p className="text-gray-400 leading-relaxed">
-                  The AI maps the clothing to your specific measurements,
-                  showing exactly how tight or loose the fit will be.
-                </p>
-              </div>
-
               {/* Duplicate Feature 2 */}
               <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#feca57]/30 transition-all hover:translate-y-[-4px] w-[320px] lg:w-[400px] shrink-0">
                 <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
@@ -581,8 +573,9 @@ export default function Home() {
                   Universal Compatibility
                 </h3>
                 <p className="text-gray-400 leading-relaxed">
-                  Works on 100+ top fashion sites including Zara, H&amp;M, ASOS,
-                  and more. No integration needed by the store.
+                  Works on the 3 major e-commerce platforms including Amazon,
+                  Temu, and Lululemon, with additional support for 100+ top
+                  fashion sites coming soon, No integration needed by the store.
                 </p>
               </div>
 
