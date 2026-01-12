@@ -478,7 +478,7 @@ export default function Home() {
           </div>
 
           <div className="overflow-x-auto scrollbar-hide -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8">
-            <div className="flex gap-6 min-w-max animate-scroll-horizontal lg:max-w-[calc(400px*3+1.5rem*2)] lg:mx-auto lg:overflow-hidden">
+            <div className="flex gap-6 min-w-max animate-scroll-horizontal lg:max-w-[calc(400px*3+1.5rem*2)] lg:mx-auto lg:overflow-hidden group">
               {/* Feature 1 */}
 
               {/* Feature 2 */}
@@ -562,6 +562,23 @@ export default function Home() {
                 </p>
               </div>
 
+              {/* Feature 7 */}
+              <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#135bec]/30 transition-all hover:translate-y-[-4px] w-[320px] lg:w-[400px] shrink-0">
+                <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
+                  <span className="material-symbols-outlined text-white text-3xl">
+                    checkroom
+                  </span>
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-white">
+                  Supported Clothing Types
+                </h3>
+                <p className="text-gray-400 leading-relaxed">
+                  Works with tops, bottoms, dresses, outerwear, and more. From
+                  t-shirts to gowns, jackets to robes—try on virtually any
+                  clothing item.
+                </p>
+              </div>
+
               {/* Duplicate Feature 2 */}
               <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#feca57]/30 transition-all hover:translate-y-[-4px] w-[320px] lg:w-[400px] shrink-0">
                 <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
@@ -640,6 +657,23 @@ export default function Home() {
                 <p className="text-gray-400 leading-relaxed">
                   Browse your previous try-ons anytime. Revisit your favorite
                   looks and share them with friends.
+                </p>
+              </div>
+
+              {/* Duplicate Feature 7 */}
+              <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#135bec]/30 transition-all hover:translate-y-[-4px] w-[320px] lg:w-[400px] shrink-0">
+                <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
+                  <span className="material-symbols-outlined text-white text-3xl">
+                    checkroom
+                  </span>
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-white">
+                  Supported Clothing Types
+                </h3>
+                <p className="text-gray-400 leading-relaxed">
+                  Works with tops, bottoms, dresses, outerwear, and more. From
+                  t-shirts to gowns, jackets to robes—try on virtually any
+                  clothing item.
                 </p>
               </div>
             </div>

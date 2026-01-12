@@ -151,7 +151,7 @@ a[href] {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-320px * 6 - 1.5rem * 5));
+    transform: translateX(calc(-320px * 7 - 1.5rem * 6)); /* 7 cards + 6 gaps */
   }
 }
 
@@ -160,7 +160,7 @@ a[href] {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-400px * 6 - 1.5rem * 5));
+    transform: translateX(calc(-400px * 7 - 1.5rem * 6)); /* 7 cards + 6 gaps */
   }
 }
 
