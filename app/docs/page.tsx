@@ -676,8 +676,8 @@ export default function DocsPage() {
                       <span className="text-white font-semibold">
                         3 try-on generations
                       </span>{" "}
-                      per session. Choose your photos and products carefully to
-                      make the most of your tries.
+                      per 24-hr period. Choose your photos and products
+                      carefully to make the most of your tries.
                     </p>
                     <p className="mt-3 text-sm text-gray-400 leading-relaxed">
                       This limit helps ensure fair usage and optimal performance
