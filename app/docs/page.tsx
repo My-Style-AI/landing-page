@@ -111,6 +111,12 @@ export default function DocsPage() {
                 </a>
                 <a
                   className="block text-gray-300 hover:text-white"
+                  href="#usage-limits"
+                >
+                  Usage Limits
+                </a>
+                <a
+                  className="block text-gray-300 hover:text-white"
                   href="#screenshots"
                 >
                   Screenshots
@@ -639,6 +645,45 @@ export default function DocsPage() {
                         accurate try-on results.
                       </p>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* Usage Limits */}
+            <section
+              id="usage-limits"
+              className="scroll-mt-24 py-10 border-b border-[#232f48]"
+            >
+              <h2 className="text-2xl font-bold">Usage Limits</h2>
+              <p className="mt-3 text-gray-300 leading-relaxed">
+                Important information about try-on generation limits:
+              </p>
+
+              <div className="mt-6 rounded-2xl border border-[#feca57]/50 bg-[#111722] p-6">
+                <div className="flex items-start gap-4">
+                  <div className="shrink-0 w-10 h-10 rounded-lg bg-[#feca57]/20 flex items-center justify-center">
+                    <span className="material-symbols-outlined text-[#feca57] text-xl">
+                      info
+                    </span>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-white mb-2">
+                      Try-On Limit
+                    </h3>
+                    <p className="text-gray-300 leading-relaxed">
+                      Users are limited to{" "}
+                      <span className="text-white font-semibold">
+                        3 try-on generations
+                      </span>{" "}
+                      per session. Choose your photos and products carefully to
+                      make the most of your tries.
+                    </p>
+                    <p className="mt-3 text-sm text-gray-400 leading-relaxed">
+                      This limit helps ensure fair usage and optimal performance
+                      for all users. Each successful generation counts toward
+                      your limit.
+                    </p>
                   </div>
                 </div>
               </div>
