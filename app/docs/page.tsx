@@ -18,9 +18,11 @@ export default function DocsPage() {
       <div className="sticky top-0 z-50 border-b border-[#232f48] bg-[#050505]/85 backdrop-blur-md">
         <div className="max-w-[1240px] mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
           <div className="flex items-center gap-2 min-w-0">
-            <span className="material-symbols-outlined text-gradient text-[22px]">
-              checkroom
-            </span>
+            <img
+              src="/TryB4Buy_logo.png"
+              alt="TryB4Buy Logo"
+              className="h-10 w-auto"
+            />
             <span className="font-bold truncate">TryB4Buy Docs</span>
           </div>
           <a
@@ -46,6 +48,12 @@ export default function DocsPage() {
                   href="#supported-sites"
                 >
                   Supported Sites
+                </a>
+                <a
+                  className="block text-gray-300 hover:text-white"
+                  href="#supported-clothing-types"
+                >
+                  Supported Clothing Types
                 </a>
                 <a
                   className="block text-gray-300 hover:text-white"
@@ -97,6 +105,18 @@ export default function DocsPage() {
                     Step 7 — Compare
                   </a>
                 </div>
+                <a
+                  className="block text-gray-300 hover:text-white"
+                  href="#photo-requirements"
+                >
+                  Photo Requirements
+                </a>
+                <a
+                  className="block text-gray-300 hover:text-white"
+                  href="#usage-limits"
+                >
+                  Usage Limits
+                </a>
                 <a
                   className="block text-gray-300 hover:text-white"
                   href="#screenshots"
@@ -232,6 +252,192 @@ export default function DocsPage() {
               </div>
             </section>
 
+            {/* Supported Clothing Types */}
+            <section
+              id="supported-clothing-types"
+              className="scroll-mt-24 py-10 border-b border-[#232f48]"
+            >
+              <h2 className="text-2xl font-bold">Supported Clothing Types</h2>
+              <p className="mt-3 text-gray-300 leading-relaxed">
+                The extension supports these clothing categories:
+              </p>
+
+              <div className="mt-8 space-y-8">
+                {/* Tops & Shirts */}
+                <div>
+                  <h3 className="text-lg font-semibold text-white mb-4">
+                    Tops &amp; Shirts
+                  </h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                    <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4">
+                      <p className="text-sm text-gray-300">
+                        Shirts (dress shirts, casual shirts)
+                      </p>
+                    </div>
+                    <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4">
+                      <p className="text-sm text-gray-300">T-shirts</p>
+                    </div>
+                    <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4">
+                      <p className="text-sm text-gray-300">Polos</p>
+                    </div>
+                    <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4">
+                      <p className="text-sm text-gray-300">Sleepshirts</p>
+                    </div>
+                    <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4">
+                      <p className="text-sm text-gray-300">Tank tops</p>
+                    </div>
+                    <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4">
+                      <p className="text-sm text-gray-300">Crop tops</p>
+                    </div>
+                    <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4">
+                      <p className="text-sm text-gray-300">Halter tops</p>
+                    </div>
+                    <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4">
+                      <p className="text-sm text-gray-300">Tube tops</p>
+                    </div>
+                    <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4">
+                      <p className="text-sm text-gray-300">Camisoles</p>
+                    </div>
+                    <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4">
+                      <p className="text-sm text-gray-300">Bodysuits</p>
+                    </div>
+                    <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4">
+                      <p className="text-sm text-gray-300">Blouses</p>
+                    </div>
+                    <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4">
+                      <p className="text-sm text-gray-300">Tops (general)</p>
+                    </div>
+                    <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4">
+                      <p className="text-sm text-gray-300">Peplum tops</p>
+                    </div>
+                    <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4">
+                      <p className="text-sm text-gray-300">Wrap tops</p>
+                    </div>
+                    <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4">
+                      <p className="text-sm text-gray-300">Off-shoulder tops</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Bottoms */}
+                <div>
+                  <h3 className="text-lg font-semibold text-white mb-4">
+                    Bottoms
+                  </h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                    <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4">
+                      <p className="text-sm text-gray-300">Trousers</p>
+                    </div>
+                    <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4">
+                      <p className="text-sm text-gray-300">Pants</p>
+                    </div>
+                    <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4">
+                      <p className="text-sm text-gray-300">Jeans</p>
+                    </div>
+                    <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4">
+                      <p className="text-sm text-gray-300">Sweatpants</p>
+                    </div>
+                    <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4">
+                      <p className="text-sm text-gray-300">Joggers</p>
+                    </div>
+                    <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4">
+                      <p className="text-sm text-gray-300">Chinos</p>
+                    </div>
+                    <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4">
+                      <p className="text-sm text-gray-300">Cargo pants</p>
+                    </div>
+                    <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4">
+                      <p className="text-sm text-gray-300">Leggings</p>
+                    </div>
+                    <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4">
+                      <p className="text-sm text-gray-300">Shorts</p>
+                    </div>
+                    <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4">
+                      <p className="text-sm text-gray-300">Skirts</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Dresses & Gowns */}
+                <div>
+                  <h3 className="text-lg font-semibold text-white mb-4">
+                    Dresses &amp; Gowns
+                  </h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                    <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4">
+                      <p className="text-sm text-gray-300">Dresses</p>
+                    </div>
+                    <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4">
+                      <p className="text-sm text-gray-300">Gowns</p>
+                    </div>
+                    <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4">
+                      <p className="text-sm text-gray-300">Nightgowns</p>
+                    </div>
+                    <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4">
+                      <p className="text-sm text-gray-300">Wrap dresses</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Outerwear */}
+                <div>
+                  <h3 className="text-lg font-semibold text-white mb-4">
+                    Outerwear
+                  </h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                    <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4">
+                      <p className="text-sm text-gray-300">Jackets</p>
+                    </div>
+                    <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4">
+                      <p className="text-sm text-gray-300">Blazers</p>
+                    </div>
+                    <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4">
+                      <p className="text-sm text-gray-300">Bomber jackets</p>
+                    </div>
+                    <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4">
+                      <p className="text-sm text-gray-300">Coats</p>
+                    </div>
+                    <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4">
+                      <p className="text-sm text-gray-300">Overcoats</p>
+                    </div>
+                    <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4">
+                      <p className="text-sm text-gray-300">Trench coats</p>
+                    </div>
+                    <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4">
+                      <p className="text-sm text-gray-300">Sweaters</p>
+                    </div>
+                    <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4">
+                      <p className="text-sm text-gray-300">Cardigans</p>
+                    </div>
+                    <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4">
+                      <p className="text-sm text-gray-300">Hoodies</p>
+                    </div>
+                    <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4">
+                      <p className="text-sm text-gray-300">Pullovers</p>
+                    </div>
+                    <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4">
+                      <p className="text-sm text-gray-300">Sweatshirts</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Other */}
+                <div>
+                  <h3 className="text-lg font-semibold text-white mb-4">
+                    Other
+                  </h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                    <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4">
+                      <p className="text-sm text-gray-300">Robes</p>
+                    </div>
+                    <div className="rounded-xl border border-[#232f48] bg-[#111722] p-4">
+                      <p className="text-sm text-gray-300">Kimonos</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
             {/* How to Use */}
             <section
               id="how-to-use"
@@ -355,6 +561,136 @@ export default function DocsPage() {
               </div>
             </section>
 
+            {/* Photo Requirements */}
+            <section
+              id="photo-requirements"
+              className="scroll-mt-24 py-10 border-b border-[#232f48]"
+            >
+              <h2 className="text-2xl font-bold">
+                Photo Requirements for Best Results
+              </h2>
+              <p className="mt-3 text-gray-300 leading-relaxed">
+                The extension shows a tooltip with these guidelines:
+              </p>
+
+              <div className="mt-6 space-y-4">
+                <div className="rounded-xl border border-[#232f48] bg-[#111722] p-5">
+                  <div className="flex items-start gap-4">
+                    <div className="shrink-0 w-8 h-8 rounded-lg bg-[#192233] flex items-center justify-center">
+                      <span className="material-symbols-outlined text-white text-lg">
+                        person
+                      </span>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-white mb-1">
+                        Single person only
+                      </h3>
+                      <p className="text-gray-400">
+                        No group photos — the AI works best with photos
+                        containing only one person.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="rounded-xl border border-[#232f48] bg-[#111722] p-5">
+                  <div className="flex items-start gap-4">
+                    <div className="shrink-0 w-8 h-8 rounded-lg bg-[#192233] flex items-center justify-center">
+                      <span className="material-symbols-outlined text-white text-lg">
+                        straighten
+                      </span>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-white mb-1">
+                        Full body visible
+                      </h3>
+                      <p className="text-gray-400">
+                        Head to feet in frame — ensure your entire body is
+                        visible from head to toe.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="rounded-xl border border-[#232f48] bg-[#111722] p-5">
+                  <div className="flex items-start gap-4">
+                    <div className="shrink-0 w-8 h-8 rounded-lg bg-[#192233] flex items-center justify-center">
+                      <span className="material-symbols-outlined text-white text-lg">
+                        camera_front
+                      </span>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-white mb-1">
+                        Front-facing pose
+                      </h3>
+                      <p className="text-gray-400">
+                        Facing the camera — stand facing forward for the best
+                        results.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="rounded-xl border border-[#232f48] bg-[#111722] p-5">
+                  <div className="flex items-start gap-4">
+                    <div className="shrink-0 w-8 h-8 rounded-lg bg-[#192233] flex items-center justify-center">
+                      <span className="material-symbols-outlined text-white text-lg">
+                        accessibility_new
+                      </span>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-white mb-1">
+                        No sitting down
+                      </h3>
+                      <p className="text-gray-400">
+                        Standing pose preferred — standing photos produce more
+                        accurate try-on results.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* Usage Limits */}
+            <section
+              id="usage-limits"
+              className="scroll-mt-24 py-10 border-b border-[#232f48]"
+            >
+              <h2 className="text-2xl font-bold">Usage Limits</h2>
+              <p className="mt-3 text-gray-300 leading-relaxed">
+                Important information about try-on generation limits:
+              </p>
+
+              <div className="mt-6 rounded-2xl border border-[#feca57]/50 bg-[#111722] p-6">
+                <div className="flex items-start gap-4">
+                  <div className="shrink-0 w-10 h-10 rounded-lg bg-[#feca57]/20 flex items-center justify-center">
+                    <span className="material-symbols-outlined text-[#feca57] text-xl">
+                      info
+                    </span>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-white mb-2">
+                      Try-On Limit
+                    </h3>
+                    <p className="text-gray-300 leading-relaxed">
+                      Users are limited to{" "}
+                      <span className="text-white font-semibold">
+                        5 try-on generations
+                      </span>{" "}
+                      per 24-hr period. Choose your photos and products
+                      carefully to make the most of your tries.
+                    </p>
+                    <p className="mt-3 text-sm text-gray-400 leading-relaxed">
+                      This limit helps ensure fair usage and optimal performance
+                      for all users. Each successful generation counts toward
+                      your limit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
             {/* Screenshots */}
             <section
               id="screenshots"
@@ -448,10 +784,10 @@ export default function DocsPage() {
                     title: "Fashion Enthusiasts",
                     body: "Experiment with different styles and see how various items complement your look.",
                   },
-                  {
+                  /* {
                     title: "Size-Conscious Buyers",
                     body: "Visualize how different sizes and styles fit your body type.",
-                  },
+                  }, */
                   {
                     title: "Time-Saving Shoppers",
                     body: "Quickly preview multiple items without physical try-ons or returns.",
