@@ -18,9 +18,11 @@ export default function DocsPage() {
       <div className="sticky top-0 z-50 border-b border-[#232f48] bg-[#050505]/85 backdrop-blur-md">
         <div className="max-w-[1240px] mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
           <div className="flex items-center gap-2 min-w-0">
-            <span className="material-symbols-outlined text-gradient text-[22px]">
-              checkroom
-            </span>
+            <img
+              src="/TryB4Buy_logo.png"
+              alt="TryB4Buy Logo"
+              className="h-10 w-auto"
+            />
             <span className="font-bold truncate">TryB4Buy Docs</span>
           </div>
           <a
@@ -674,7 +676,7 @@ export default function DocsPage() {
                     <p className="text-gray-300 leading-relaxed">
                       Users are limited to{" "}
                       <span className="text-white font-semibold">
-                        3 try-on generations
+                        5 try-on generations
                       </span>{" "}
                       per 24-hr period. Choose your photos and products
                       carefully to make the most of your tries.

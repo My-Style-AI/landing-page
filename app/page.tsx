@@ -26,9 +26,11 @@ export default function Home() {
             {/* Logo */}
             <div className="flex items-center gap-2">
               <a href="/" className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-gradient text-3xl">
-                  checkroom
-                </span>
+                <img
+                  src="/TryB4Buy_logo.png"
+                  alt="TryB4Buy Logo"
+                  className="h-12 w-auto"
+                />
                 <h2 className="text-xl font-bold tracking-tight text-white">
                   TryB4Buy
                 </h2>
@@ -275,8 +277,8 @@ export default function Home() {
                   <div className="absolute top-6 left-6 z-20 animate-hero-animation-ai-badge group-hover:[animation-play-state:paused] will-change-[opacity,visibility]">
                     <div className="bg-gradient-brand text-black px-4 py-2 rounded-xl font-bold text-xs tracking-widest flex items-center gap-2 shadow-lg">
                       <span className="material-symbols-outlined text-sm">
-                        auto_awesome
-                      </span>
+                            auto_awesome
+                          </span>
                       AI TRY-ON
                     </div>
                   </div>
@@ -479,7 +481,7 @@ export default function Home() {
 
           <div className="overflow-x-auto scrollbar-hide -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8">
             <div className="flex gap-6 min-w-max animate-scroll-horizontal lg:max-w-[calc(400px*3+1.5rem*2)] lg:mx-auto lg:overflow-hidden group">
-              {/* Feature 1 */}
+            {/* Feature 1 */}
 
               {/* Feature 2 */}
               <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#feca57]/30 transition-all hover:translate-y-[-4px] w-[320px] lg:w-[400px] shrink-0">
@@ -548,12 +550,12 @@ export default function Home() {
 
               {/* Feature 6 */}
               <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#ff6b6b]/30 transition-all hover:translate-y-[-4px] w-[320px] lg:w-[400px] shrink-0">
-                <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
-                  <span className="material-symbols-outlined text-white text-3xl">
+              <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
+                <span className="material-symbols-outlined text-white text-3xl">
                     history
-                  </span>
-                </div>
-                <h3 className="text-xl font-bold mb-3 text-white">
+                </span>
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-white">
                   Try-On History
                 </h3>
                 <p className="text-gray-400 leading-relaxed">
@@ -571,45 +573,45 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-white">
                   Supported Clothing Types
-                </h3>
-                <p className="text-gray-400 leading-relaxed">
+              </h3>
+              <p className="text-gray-400 leading-relaxed">
                   Works with tops, bottoms, dresses, outerwear, and more. From
                   t-shirts to gowns, jackets to robes—try on virtually any
                   clothing item.
-                </p>
-              </div>
+              </p>
+            </div>
 
               {/* Duplicate Feature 2 */}
               <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#feca57]/30 transition-all hover:translate-y-[-4px] w-[320px] lg:w-[400px] shrink-0">
-                <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
-                  <span className="material-symbols-outlined text-white text-3xl">
-                    universal_currency_alt
-                  </span>
-                </div>
-                <h3 className="text-xl font-bold mb-3 text-white">
-                  Universal Compatibility
-                </h3>
-                <p className="text-gray-400 leading-relaxed">
+              <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
+                <span className="material-symbols-outlined text-white text-3xl">
+                  universal_currency_alt
+                </span>
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-white">
+                Universal Compatibility
+              </h3>
+              <p className="text-gray-400 leading-relaxed">
                   Works on the 3 major e-commerce platforms including Amazon,
                   Temu, and Lululemon, with additional support for 100+ top
                   fashion sites coming soon, No integration needed by the store.
-                </p>
-              </div>
+              </p>
+            </div>
 
               {/* Duplicate Feature 3 */}
               <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#ff6b6b]/30 transition-all hover:translate-y-[-4px] w-[320px] lg:w-[400px] shrink-0">
-                <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
-                  <span className="material-symbols-outlined text-white text-3xl">
-                    dresser
-                  </span>
-                </div>
-                <h3 className="text-xl font-bold mb-3 text-white">
-                  Virtual Wardrobe
-                </h3>
-                <p className="text-gray-400 leading-relaxed">
-                  Save your favorite tries to your digital closet. Mix and match
-                  items from different stores in one view.
-                </p>
+              <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
+                <span className="material-symbols-outlined text-white text-3xl">
+                  dresser
+                </span>
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-white">
+                Virtual Wardrobe
+              </h3>
+              <p className="text-gray-400 leading-relaxed">
+                Save your favorite tries to your digital closet. Mix and match
+                items from different stores in one view.
+              </p>
               </div>
 
               {/* Duplicate Feature 4 */}
@@ -832,9 +834,11 @@ export default function Home() {
         <div className="max-w-[1280px] mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-2">
             <a href="/" className="flex items-center gap-2">
-              <span className="material-symbols-outlined text-gray-400">
-                checkroom
-              </span>
+              <img
+                src="/TryB4Buy_logo.png"
+                alt="TryB4Buy Logo"
+                className="h-10 w-auto"
+              />
               <span className="font-bold text-lg">TryB4Buy</span>
             </a>
           </div>

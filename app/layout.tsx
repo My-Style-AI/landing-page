@@ -63,6 +63,11 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  icons: {
+    icon: "/TryB4Buy_logo.png",
+    shortcut: "/TryB4Buy_logo.png",
+    apple: "/TryB4Buy_logo.png",
+  },
 };
 
 export default function RootLayout({
@@ -129,7 +134,7 @@ export default function RootLayout({
               "@type": "Organization",
               name: "TryB4Buy",
               url: "https://tryb4buy.io",
-              logo: "https://tryb4buy.io/logo.png",
+              logo: "https://tryb4buy.io/TryB4Buy_logo.png",
               description:
                 "AI-powered virtual try-on extension for smarter online shopping",
               contactPoint: {
