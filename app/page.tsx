@@ -60,14 +60,19 @@ export default function Home() {
 
             {/* CTA */}
             <div className="flex items-center gap-4">
-              <button className="hidden sm:flex group relative overflow-hidden rounded-lg bg-[#135bec] px-5 py-2 transition-all hover:bg-[#1d6bf5] hover:scale-105 active:scale-95">
+              <a 
+                href="https://chromewebstore.google.com/detail/jomhjgpfjibjhgigliemamekgbficjmb?utm_source=item-share-cb"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hidden sm:flex group relative overflow-hidden rounded-lg bg-[#135bec] px-5 py-2 transition-all hover:bg-[#1d6bf5] hover:scale-105 active:scale-95"
+              >
                 <span className="relative z-10 text-sm font-bold text-white flex items-center gap-2">
                   Add to Chrome
                   <span className="material-symbols-outlined text-[18px]">
                     add_circle
                   </span>
                 </span>
-              </button>
+              </a>
 
               {/* Mobile Menu Icon */}
               <button
@@ -143,13 +148,15 @@ export default function Home() {
                   </a>
 
                   <div className="mt-10 grid grid-cols-1 gap-4">
-                    <button
-                      className="h-16 rounded-2xl bg-[#135bec] px-6 text-lg font-bold text-white hover:bg-[#1d6bf5]"
+                    <a
+                      href="https://chromewebstore.google.com/detail/jomhjgpfjibjhgigliemamekgbficjmb?utm_source=item-share-cb"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="h-16 rounded-2xl bg-[#135bec] px-6 text-lg font-bold text-white hover:bg-[#1d6bf5] flex items-center justify-center"
                       onClick={() => setIsMobileMenuOpen(false)}
-                      type="button"
                     >
                       Add to Chrome
-                    </button>
+                    </a>
                     <button
                       className="h-16 rounded-2xl border border-[#324467] bg-[#111722]/50 px-6 text-lg font-bold text-white hover:bg-[#111722] hover:border-gray-500 flex items-center justify-center gap-2"
                       onClick={() => {
@@ -202,9 +209,14 @@ export default function Home() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
-                <button className="flex h-14 items-center justify-center rounded-lg bg-[#135bec] px-8 text-base font-bold text-white shadow-lg shadow-[#135bec]/25 transition-all hover:bg-[#1d6bf5] hover:scale-105 active:scale-95">
+                <a 
+                  href="https://chromewebstore.google.com/detail/jomhjgpfjibjhgigliemamekgbficjmb?utm_source=item-share-cb"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex h-14 items-center justify-center rounded-lg bg-[#135bec] px-8 text-base font-bold text-white shadow-lg shadow-[#135bec]/25 transition-all hover:bg-[#1d6bf5] hover:scale-105 active:scale-95"
+                >
                   Add to Chrome - It&apos;s Free
-                </button>
+                </a>
                 <button
                   className="flex h-14 items-center justify-center rounded-lg border border-[#324467] bg-[#111722]/50 px-8 text-base font-medium text-white transition-all hover:bg-[#111722] hover:border-gray-500 cursor-pointer"
                   onClick={() => setIsDemoOpen(true)}
@@ -817,10 +829,15 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col items-center gap-4">
-            <button className="flex min-w-[240px] h-16 items-center justify-center rounded-xl bg-[#135bec] px-8 text-lg font-bold text-white shadow-[0_0_40px_-10px_#135bec] transition-all hover:bg-[#1d6bf5] hover:scale-105 hover:shadow-[0_0_60px_-10px_#135bec]">
+            <a 
+              href="https://chromewebstore.google.com/detail/jomhjgpfjibjhgigliemamekgbficjmb?utm_source=item-share-cb"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex min-w-[240px] h-16 items-center justify-center rounded-xl bg-[#135bec] px-8 text-lg font-bold text-white shadow-[0_0_40px_-10px_#135bec] transition-all hover:bg-[#1d6bf5] hover:scale-105 hover:shadow-[0_0_60px_-10px_#135bec]"
+            >
               <span className="mr-2">Add to Chrome</span>
               <span className="material-symbols-outlined">rocket_launch</span>
-            </button>
+            </a>
             <p className="text-sm text-gray-500 mt-4">
               Compatible with Chrome, Brave, and Edge browsers.
             </p>
