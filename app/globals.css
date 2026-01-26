@@ -183,3 +183,54 @@ a[href] {
     animation-play-state: paused;
   }
 }
+
+/* Animated rotating border for Watch Demo button */
+@keyframes rotate-border-gradient {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.watch-demo-animated-border {
+  position: relative;
+  border-radius: 0.5rem;
+  padding: 2px;
+  background: #111722;
+  overflow: hidden;
+}
+
+.watch-demo-animated-border::before {
+  content: '';
+  position: absolute;
+  inset: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(
+    from 0deg,
+    #ff6b6b,
+    #feca57,
+    #135bec,
+    #ff6b6b
+  );
+  animation: rotate-border-gradient 3s linear infinite;
+  z-index: 0;
+}
+
+.watch-demo-animated-border:hover::before {
+  animation-play-state: paused;
+}
+
+.watch-demo-button-inner {
+  position: relative;
+  background: #111722;
+  border-radius: calc(0.5rem - 2px);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}

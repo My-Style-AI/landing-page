@@ -252,7 +252,24 @@ export default function DocsPage() {
                 <div className="rounded-2xl border border-[#232f48] bg-[#111722] p-5">
                   <div className="flex items-center gap-3 mb-2">
                     <div className="shrink-0 w-7 h-7 flex items-center justify-center bg-white rounded p-1">
-                      <span className="text-lg font-bold text-black">ASOS</span>
+                      <svg
+                        viewBox="0 0 100 30"
+                        className="h-full w-auto"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <text
+                          x="50"
+                          y="20"
+                          fontFamily="Arial, sans-serif"
+                          fontSize="20"
+                          fontWeight="bold"
+                          fill="#000000"
+                          textAnchor="middle"
+                        >
+                          ASOS
+                        </text>
+                      </svg>
                     </div>
                     <h3 className="text-lg font-bold">ASOS</h3>
                   </div>
@@ -263,7 +280,11 @@ export default function DocsPage() {
                 <div className="rounded-2xl border border-[#232f48] bg-[#111722] p-5">
                   <div className="flex items-center gap-3 mb-2">
                     <div className="shrink-0 w-7 h-7 flex items-center justify-center bg-white rounded p-1">
-                      <span className="text-xs font-bold text-black">NIKE</span>
+                      <img
+                        src="/nike-logo.png"
+                        alt="Nike logo"
+                        className="h-full w-auto object-contain"
+                      />
                     </div>
                     <h3 className="text-lg font-bold">Nike</h3>
                   </div>
@@ -274,7 +295,16 @@ export default function DocsPage() {
                 <div className="rounded-2xl border border-[#232f48] bg-[#111722] p-5">
                   <div className="flex items-center gap-3 mb-2">
                     <div className="shrink-0 w-7 h-7 flex items-center justify-center bg-white rounded p-1">
-                      <span className="text-xs font-bold text-black">TARGET</span>
+                      <svg
+                        viewBox="0 0 100 100"
+                        className="h-full w-auto"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="50" cy="50" r="45" fill="#E4002B" />
+                        <circle cx="50" cy="50" r="28" fill="#FFFFFF" />
+                        <circle cx="50" cy="50" r="15" fill="#E4002B" />
+                      </svg>
                     </div>
                     <h3 className="text-lg font-bold">Target</h3>
                   </div>
@@ -285,7 +315,25 @@ export default function DocsPage() {
                 <div className="rounded-2xl border border-[#232f48] bg-[#111722] p-5">
                   <div className="flex items-center gap-3 mb-2">
                     <div className="shrink-0 w-7 h-7 flex items-center justify-center bg-white rounded p-1">
-                      <span className="text-xs font-bold text-black">ZARA</span>
+                      <svg
+                        viewBox="0 0 100 30"
+                        className="h-full w-auto"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <text
+                          x="50"
+                          y="22"
+                          fontFamily="Arial, sans-serif"
+                          fontSize="22"
+                          fontWeight="bold"
+                          fill="#000000"
+                          textAnchor="middle"
+                          letterSpacing="2"
+                        >
+                          ZARA
+                        </text>
+                      </svg>
                     </div>
                     <h3 className="text-lg font-bold">Zara</h3>
                   </div>
@@ -296,7 +344,24 @@ export default function DocsPage() {
                 <div className="rounded-2xl border border-[#232f48] bg-[#111722] p-5">
                   <div className="flex items-center gap-3 mb-2">
                     <div className="shrink-0 w-7 h-7 flex items-center justify-center bg-white rounded p-1">
-                      <span className="text-xs font-bold text-black">SHEIN</span>
+                      <svg
+                        viewBox="0 0 100 30"
+                        className="h-full w-auto"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <text
+                          x="50"
+                          y="20"
+                          fontFamily="Arial, sans-serif"
+                          fontSize="18"
+                          fontWeight="bold"
+                          fill="#000000"
+                          textAnchor="middle"
+                        >
+                          SHEIN
+                        </text>
+                      </svg>
                     </div>
                     <h3 className="text-lg font-bold">Shein</h3>
                   </div>

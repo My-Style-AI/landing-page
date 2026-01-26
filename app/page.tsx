@@ -158,17 +158,19 @@ export default function Home() {
                       Add to Chrome
                     </a>
                     <button
-                      className="h-16 rounded-2xl border border-[#324467] bg-[#111722]/50 px-6 text-lg font-bold text-white hover:bg-[#111722] hover:border-gray-500 flex items-center justify-center gap-2"
+                      className="watch-demo-animated-border h-16"
                       onClick={() => {
                         setIsMobileMenuOpen(false);
                         setIsDemoOpen(true);
                       }}
                       type="button"
                     >
-                      <span className="material-symbols-outlined">
-                        play_circle
-                      </span>
-                      Watch Demo
+                      <div className="watch-demo-button-inner px-6 text-lg font-bold text-white flex items-center justify-center gap-2">
+                        <span className="material-symbols-outlined">
+                          play_circle
+                        </span>
+                        Watch Demo
+                      </div>
                     </button>
                   </div>
                 </nav>
@@ -218,13 +220,15 @@ export default function Home() {
                   Add to Chrome - It&apos;s Free
                 </a>
                 <button
-                  className="flex h-14 items-center justify-center rounded-lg border border-[#324467] bg-[#111722]/50 px-8 text-base font-medium text-white transition-all hover:bg-[#111722] hover:border-gray-500 cursor-pointer"
+                  className="watch-demo-animated-border h-14"
                   onClick={() => setIsDemoOpen(true)}
                 >
-                  <span className="material-symbols-outlined mr-2">
-                    play_circle
-                  </span>
-                  Watch Demo
+                  <div className="watch-demo-button-inner px-8 text-base font-medium text-white transition-all hover:bg-[#111722] cursor-pointer flex items-center justify-center">
+                    <span className="material-symbols-outlined mr-2">
+                      play_circle
+                    </span>
+                    Watch Demo
+                  </div>
                 </button>
               </div>
 
