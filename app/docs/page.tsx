@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "TryB4Buy Documentation - How to Use AI Virtual Try-On Extension",
   description:
-    "Complete documentation for TryB4Buy. Learn how to use the AI-powered virtual try-on extension on Amazon, Temu, and Lululemon. Step-by-step guide, troubleshooting, and FAQs.",
+    "Complete documentation for TryB4Buy. Learn how to use the AI-powered virtual try-on extension on Amazon, Temu, Lululemon, ASOS, Nike, Target, Zara, and Shein. Step-by-step guide, troubleshooting, and FAQs.",
   openGraph: {
     title: "TryB4Buy Documentation",
     description: "Complete guide to using TryB4Buy AI virtual try-on extension",
@@ -249,6 +249,126 @@ export default function DocsPage() {
                     subdomains.
                   </p>
                 </div>
+                <div className="rounded-2xl border border-[#232f48] bg-[#111722] p-5">
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="shrink-0 w-7 h-7 flex items-center justify-center bg-white rounded p-1">
+                      <svg
+                        viewBox="0 0 100 30"
+                        className="h-full w-auto"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <text
+                          x="50"
+                          y="20"
+                          fontFamily="Arial, sans-serif"
+                          fontSize="20"
+                          fontWeight="bold"
+                          fill="#000000"
+                          textAnchor="middle"
+                        >
+                          ASOS
+                        </text>
+                      </svg>
+                    </div>
+                    <h3 className="text-lg font-bold">ASOS</h3>
+                  </div>
+                  <p className="mt-2 text-sm text-gray-300 leading-relaxed">
+                    asos.com and all regional subdomains.
+                  </p>
+                </div>
+                <div className="rounded-2xl border border-[#232f48] bg-[#111722] p-5">
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="shrink-0 w-7 h-7 flex items-center justify-center bg-white rounded p-1">
+                      <img
+                        src="/nike-logo.png"
+                        alt="Nike logo"
+                        className="h-full w-auto object-contain"
+                      />
+                    </div>
+                    <h3 className="text-lg font-bold">Nike</h3>
+                  </div>
+                  <p className="mt-2 text-sm text-gray-300 leading-relaxed">
+                    nike.com and all regional subdomains.
+                  </p>
+                </div>
+                <div className="rounded-2xl border border-[#232f48] bg-[#111722] p-5">
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="shrink-0 w-7 h-7 flex items-center justify-center bg-white rounded p-1">
+                      <svg
+                        viewBox="0 0 100 100"
+                        className="h-full w-auto"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="50" cy="50" r="45" fill="#E4002B" />
+                        <circle cx="50" cy="50" r="28" fill="#FFFFFF" />
+                        <circle cx="50" cy="50" r="15" fill="#E4002B" />
+                      </svg>
+                    </div>
+                    <h3 className="text-lg font-bold">Target</h3>
+                  </div>
+                  <p className="mt-2 text-sm text-gray-300 leading-relaxed">
+                    target.com and all regional subdomains.
+                  </p>
+                </div>
+                <div className="rounded-2xl border border-[#232f48] bg-[#111722] p-5">
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="shrink-0 w-7 h-7 flex items-center justify-center bg-white rounded p-1">
+                      <svg
+                        viewBox="0 0 100 30"
+                        className="h-full w-auto"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <text
+                          x="50"
+                          y="22"
+                          fontFamily="Arial, sans-serif"
+                          fontSize="22"
+                          fontWeight="bold"
+                          fill="#000000"
+                          textAnchor="middle"
+                          letterSpacing="2"
+                        >
+                          ZARA
+                        </text>
+                      </svg>
+                    </div>
+                    <h3 className="text-lg font-bold">Zara</h3>
+                  </div>
+                  <p className="mt-2 text-sm text-gray-300 leading-relaxed">
+                    zara.com and all regional subdomains.
+                  </p>
+                </div>
+                <div className="rounded-2xl border border-[#232f48] bg-[#111722] p-5">
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="shrink-0 w-7 h-7 flex items-center justify-center bg-white rounded p-1">
+                      <svg
+                        viewBox="0 0 100 30"
+                        className="h-full w-auto"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <text
+                          x="50"
+                          y="20"
+                          fontFamily="Arial, sans-serif"
+                          fontSize="18"
+                          fontWeight="bold"
+                          fill="#000000"
+                          textAnchor="middle"
+                        >
+                          SHEIN
+                        </text>
+                      </svg>
+                    </div>
+                    <h3 className="text-lg font-bold">Shein</h3>
+                  </div>
+                  <p className="mt-2 text-sm text-gray-300 leading-relaxed">
+                    shein.com and all regional subdomains.
+                  </p>
+                </div>
               </div>
             </section>
 
@@ -461,7 +581,7 @@ export default function DocsPage() {
                     Step 2: Navigate to a Product Page
                   </h3>
                   <p className="mt-2 text-gray-300 leading-relaxed">
-                    Visit a product page on Amazon, Temu, or Lululemon. Works
+                    Visit a product page on Amazon, Temu, Lululemon, ASOS, Nike, Target, Zara, or Shein. Works
                     with:
                   </p>
                   <ul className="mt-3 list-disc pl-6 space-y-1 text-gray-300">
@@ -960,7 +1080,7 @@ export default function DocsPage() {
                 </h3>
                 <ul className="mt-3 list-disc pl-6 space-y-1 text-gray-300">
                   <li>Initial release</li>
-                  <li>Support for Amazon, Temu, and Lululemon</li>
+                  <li>Support for Amazon, Temu, Lululemon, ASOS, Nike, Target, Zara, and Shein</li>
                   <li>Virtual try-on functionality</li>
                   <li>Photo upload and management</li>
                   <li>Result comparison and sharing</li>

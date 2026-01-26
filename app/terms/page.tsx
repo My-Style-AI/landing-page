@@ -120,7 +120,7 @@ export default function TermsPage() {
               </h2>
               <p className="leading-relaxed">
                 The Extension may interact with third-party sites (e.g., Amazon,
-                Temu, Lululemon) and third-party services (e.g.,
+                Temu, Lululemon, ASOS, Nike, Target, Zara, Shein) and third-party services (e.g.,
                 authentication/storage providers). We are not responsible for
                 third-party sites/services, and we are not affiliated with or
                 endorsed by those retailers unless explicitly stated.
@@ -199,6 +199,7 @@ export default function TermsPage() {
     </main>
   );
 }
+
 
 
 

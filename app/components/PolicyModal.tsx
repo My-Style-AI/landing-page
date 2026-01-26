@@ -195,7 +195,7 @@ export function PolicyModal({ open, onClose }: PolicyModalProps) {
               </h3>
               <p className="leading-relaxed">
                 The Extension is designed to operate on supported shopping sites
-                (e.g., Amazon, Temu, Lululemon). It may inject scripts into
+                (e.g., Amazon, Temu, Lululemon, ASOS, Nike, Target, Zara, Shein). It may inject scripts into
                 supported pages to detect product images and enable try-on
                 features. It does not intentionally collect data from unrelated
                 sites.
