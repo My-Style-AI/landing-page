@@ -11,7 +11,7 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   title: "TryB4Buy - AI-Powered Virtual Try-On Extension | Try Before You Buy",
   description:
-    "TryB4Buy is your AI virtual try-on service. Shop smarter with AI-powered virtual fitting room. Try clothes on yourself before buying on Amazon, Temu, and Lululemon.",
+    "TryB4Buy is your AI virtual try-on service. Shop smarter with AI-powered virtual fitting room. Try clothes on yourself before buying on Amazon, Temu, Lululemon, ASOS, Nike, Target, Zara, and Shein.",
   keywords: [
     "AI try-on",
     "virtual fitting room",
@@ -109,16 +109,16 @@ export default function RootLayout({
                 ratingCount: "1000",
               },
               description:
-                "AI-powered Chrome extension that lets you visualize any outfit on your body instantly while browsing your favorite stores like Amazon, Temu, and Lululemon.",
+                "AI-powered Chrome extension that lets you visualize any outfit on your body instantly while browsing your favorite stores like Amazon, Temu, Lululemon, ASOS, Nike, Target, Zara, and Shein.",
               url: "https://tryb4buy.io",
               screenshot: "https://tryb4buy.io/popup.png",
               softwareVersion: "1.0.0",
               releaseNotes:
-                "Initial release with support for Amazon, Temu, and Lululemon",
+                "Initial release with support for Amazon, Temu, Lululemon, ASOS, Nike, Target, Zara, and Shein",
               featureList: [
                 "AI-powered virtual try-on",
                 "Body-adaptive fit visualization",
-                "Works on Amazon, Temu, Lululemon",
+                "Works on Amazon, Temu, Lululemon, ASOS, Nike, Target, Zara, and Shein",
                 "Privacy-first design",
                 "Instant results",
               ],

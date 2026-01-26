@@ -505,9 +505,10 @@ export default function Home() {
                   Universal Compatibility
                 </h3>
                 <p className="text-gray-400 leading-relaxed">
-                  Works on the 3 major e-commerce platforms including Amazon,
-                  Temu, and Lululemon, with additional support for 100+ top
-                  fashion sites coming soon, No integration needed by the store.
+                  Works on 8 major e-commerce platforms including Amazon, Temu,
+                  Lululemon, ASOS, Nike, Target, Zara, and Shein, with additional
+                  support for 100+ top fashion sites coming soon. No integration
+                  needed by the store.
                 </p>
               </div>
 
@@ -603,9 +604,10 @@ export default function Home() {
                   Universal Compatibility
                 </h3>
                 <p className="text-gray-400 leading-relaxed">
-                  Works on the 3 major e-commerce platforms including Amazon,
-                  Temu, and Lululemon, with additional support for 100+ top
-                  fashion sites coming soon, No integration needed by the store.
+                  Works on 8 major e-commerce platforms including Amazon, Temu,
+                  Lululemon, ASOS, Nike, Target, Zara, and Shein, with additional
+                  support for 100+ top fashion sites coming soon. No integration
+                  needed by the store.
                 </p>
               </div>
 
