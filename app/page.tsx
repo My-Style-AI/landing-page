@@ -60,7 +60,7 @@ export default function Home() {
 
             {/* CTA */}
             <div className="flex items-center gap-4">
-              <a 
+              <a
                 href="https://chromewebstore.google.com/detail/jomhjgpfjibjhgigliemamekgbficjmb?utm_source=item-share-cb"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -211,7 +211,7 @@ export default function Home() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
-                <a 
+                <a
                   href="https://chromewebstore.google.com/detail/jomhjgpfjibjhgigliemamekgbficjmb?utm_source=item-share-cb"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -510,9 +510,9 @@ export default function Home() {
                 </h3>
                 <p className="text-gray-400 leading-relaxed">
                   Works on 8 major e-commerce platforms including Amazon, Temu,
-                  Lululemon, ASOS, Nike, Target, Zara, and Shein, with additional
-                  support for 100+ top fashion sites coming soon. No integration
-                  needed by the store.
+                  Lululemon, ASOS, Nike, Target, Zara, and Shein, with
+                  additional support for 100+ top fashion sites coming soon. No
+                  integration needed by the store.
                 </p>
               </div>
 
@@ -609,9 +609,9 @@ export default function Home() {
                 </h3>
                 <p className="text-gray-400 leading-relaxed">
                   Works on 8 major e-commerce platforms including Amazon, Temu,
-                  Lululemon, ASOS, Nike, Target, Zara, and Shein, with additional
-                  support for 100+ top fashion sites coming soon. No integration
-                  needed by the store.
+                  Lululemon, ASOS, Nike, Target, Zara, and Shein, with
+                  additional support for 100+ top fashion sites coming soon. No
+                  integration needed by the store.
                 </p>
               </div>
 
@@ -835,7 +835,7 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col items-center gap-4">
-            <a 
+            <a
               href="https://chromewebstore.google.com/detail/jomhjgpfjibjhgigliemamekgbficjmb?utm_source=item-share-cb"
               target="_blank"
               rel="noopener noreferrer"

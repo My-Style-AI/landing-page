@@ -234,3 +234,32 @@ a[href] {
   justify-content: center;
   z-index: 2;
 }
+
+/* Upload page: gentle first-visit modal */
+@keyframes upload-modal-backdrop-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes upload-modal-panel-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.upload-modal-backdrop {
+  animation: upload-modal-backdrop-in 0.3s ease-out;
+}
+
+.upload-modal-panel {
+  animation: upload-modal-panel-in 0.35s ease-out;
+}
