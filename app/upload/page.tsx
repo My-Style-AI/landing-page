@@ -17,6 +17,34 @@ const PHOTO_REQUIREMENTS_MODAL = [
 
 const ICON_COLOR = "#feca57";
 
+const TRYON_API_BASE =
+  process.env.NEXT_PUBLIC_TRYON_API_URL ??
+  "https://tryon-api-nodejs-production.up.railway.app";
+
+const MAX_UPLOAD_BYTES = 10 * 1024 * 1024;
+
+function uploadErrorMessage(data: unknown, status: number): string {
+  if (data && typeof data === "object") {
+    const obj = data as Record<string, unknown>;
+    if (typeof obj.message === "string" && obj.message.trim()) {
+      return obj.message;
+    }
+    if (typeof obj.error === "string" && obj.error.trim()) {
+      return obj.error;
+    }
+    if (obj.error && typeof obj.error === "object") {
+      const nested = obj.error as Record<string, unknown>;
+      if (typeof nested.message === "string" && nested.message.trim()) {
+        return nested.message;
+      }
+    }
+  }
+  if (status === 401) {
+    return "Link expired. Scan the QR code again from the extension.";
+  }
+  return `Upload failed (${status}). Try again.`;
+}
+
 /** Inline SVG icons for the modal so no font/text flashes before load */
 function RequirementIcon({ id }: { id: string }) {
   const size = 24;
@@ -187,26 +215,33 @@ function UploadPageContent() {
       return;
     }
 
+    if (file.size > MAX_UPLOAD_BYTES) {
+      setErrorMessage(
+        "This photo is too large. Please choose an image under 10 MB.",
+      );
+      setStatus("error");
+      return;
+    }
+
     setStatus("uploading");
     setErrorMessage("");
 
     const formData = new FormData();
-    formData.append("token", token);
-    formData.append("file", file);
+    formData.append("photo", file);
 
     try {
-      const res = await fetch("/api/upload", {
+      const res = await fetch(`${TRYON_API_BASE}/users/photo-upload`, {
         method: "POST",
+        headers: {
+          Authorization: `Bearer ${token.trim()}`,
+        },
         body: formData,
       });
 
       const data = await res.json().catch(() => ({}));
 
       if (!res.ok) {
-        setErrorMessage(
-          (data as { message?: string }).message ||
-            `Upload failed (${res.status}). Try again.`,
-        );
+        setErrorMessage(uploadErrorMessage(data, res.status));
         setStatus("error");
         return;
       }
@@ -328,8 +363,8 @@ function UploadPageContent() {
               Photo uploaded
             </h1>
             <p className="text-gray-400 text-base leading-relaxed max-w-[280px]">
-              Return to your computer and refresh the TryB4Buy extension to use
-              your new photo.
+              Return to your computer — your TryB4Buy extension will pick up
+              your new photo automatically.
             </p>
           </div>
         ) : (
