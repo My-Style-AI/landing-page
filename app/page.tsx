@@ -193,7 +193,7 @@ export default function Home() {
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#232f48]/50 border border-[#232f48] w-fit mx-auto lg:mx-0 backdrop-blur-sm">
                 <span className="w-2 h-2 rounded-full bg-gradient-brand animate-pulse" />
                 <span className="text-xs font-medium text-gray-300 uppercase tracking-wider">
-                  New v1.0 Released
+                  v1.0.4 — Mobile waitlist live
                 </span>
               </div>
 
@@ -520,15 +520,15 @@ export default function Home() {
               <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#ff6b6b]/30 transition-all hover:translate-y-[-4px] w-[320px] lg:w-[400px] shrink-0">
                 <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
                   <span className="material-symbols-outlined text-white text-3xl">
-                    dresser
+                    notifications_active
                   </span>
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-white">
-                  Virtual Wardrobe
+                  Mobile App Waitlist
                 </h3>
                 <p className="text-gray-400 leading-relaxed">
-                  Save your favorite tries to your digital closet. Mix and match
-                  items from different stores in one view.
+                  Join the waitlist from the extension toolbar or results page
+                  to get notified when the TryB4Buy mobile app launches.
                 </p>
               </div>
 
@@ -556,11 +556,11 @@ export default function Home() {
                   </span>
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-white">
-                  Side-by-Side Compare
+                  Full-Screen Gallery &amp; Compare
                 </h3>
                 <p className="text-gray-400 leading-relaxed">
-                  Use the interactive slider to seamlessly compare your original
-                  photo with the AI-generated try-on result.
+                  Tap any result to open the gallery. Compare your original
+                  photo with the AI try-on using an interactive slider.
                 </p>
               </div>
 
@@ -575,8 +575,8 @@ export default function Home() {
                   Try-On History
                 </h3>
                 <p className="text-gray-400 leading-relaxed">
-                  Browse your previous try-ons anytime. Revisit your favorite
-                  looks and share them with friends.
+                  Your five most recent try-ons stay in a results grid. Reopen
+                  them anytime from the toolbar or history button.
                 </p>
               </div>
 
@@ -619,15 +619,15 @@ export default function Home() {
               <div className="group p-8 rounded-2xl bg-[#111722] border border-[#232f48] hover:border-[#ff6b6b]/30 transition-all hover:translate-y-[-4px] w-[320px] lg:w-[400px] shrink-0">
                 <div className="w-14 h-14 rounded-xl bg-[#192233] flex items-center justify-center mb-6 group-hover:bg-gradient-brand transition-colors duration-300">
                   <span className="material-symbols-outlined text-white text-3xl">
-                    dresser
+                    notifications_active
                   </span>
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-white">
-                  Virtual Wardrobe
+                  Mobile App Waitlist
                 </h3>
                 <p className="text-gray-400 leading-relaxed">
-                  Save your favorite tries to your digital closet. Mix and match
-                  items from different stores in one view.
+                  Join the waitlist from the extension toolbar or results page
+                  to get notified when the TryB4Buy mobile app launches.
                 </p>
               </div>
 
@@ -655,11 +655,11 @@ export default function Home() {
                   </span>
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-white">
-                  Side-by-Side Compare
+                  Full-Screen Gallery &amp; Compare
                 </h3>
                 <p className="text-gray-400 leading-relaxed">
-                  Use the interactive slider to seamlessly compare your original
-                  photo with the AI-generated try-on result.
+                  Tap any result to open the gallery. Compare your original
+                  photo with the AI try-on using an interactive slider.
                 </p>
               </div>
 
@@ -674,8 +674,8 @@ export default function Home() {
                   Try-On History
                 </h3>
                 <p className="text-gray-400 leading-relaxed">
-                  Browse your previous try-ons anytime. Revisit your favorite
-                  looks and share them with friends.
+                  Your five most recent try-ons stay in a results grid. Reopen
+                  them anytime from the toolbar or history button.
                 </p>
               </div>
 
@@ -736,8 +736,9 @@ export default function Home() {
                       Upload Your Photo
                     </h3>
                     <p className="text-gray-400">
-                      Upload a full-body photo to your secure private vault.
-                      Your photos never leave your device.
+                      Upload from your computer or scan a QR code to add a photo
+                      from your phone. Photos are processed securely for
+                      try-on generation.
                     </p>
                   </div>
                 </div>
@@ -830,8 +831,8 @@ export default function Home() {
             Ready to stop guessing?
           </h2>
           <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
-            Join the future of fashion. Save time, reduce returns, and shop with
-            confidence.
+            Join the future of fashion. Install the free extension today—and
+            join the mobile app waitlist for early access when we launch.
           </p>
 
           <div className="flex flex-col items-center gap-4">

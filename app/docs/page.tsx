@@ -107,6 +107,24 @@ export default function DocsPage() {
                 </div>
                 <a
                   className="block text-gray-300 hover:text-white"
+                  href="#try-on-history"
+                >
+                  Try-On History
+                </a>
+                <a
+                  className="block text-gray-300 hover:text-white"
+                  href="#mobile-app-waitlist"
+                >
+                  Mobile App Waitlist
+                </a>
+                <a
+                  className="block text-gray-300 hover:text-white"
+                  href="#toolbar"
+                >
+                  Extension Toolbar
+                </a>
+                <a
+                  className="block text-gray-300 hover:text-white"
                   href="#photo-requirements"
                 >
                   Photo Requirements
@@ -633,9 +651,9 @@ export default function DocsPage() {
                     Step 5: Upload Your Photo
                   </h3>
                   <p className="mt-2 text-gray-300 leading-relaxed">
-                    Upload up to 2 photos of yourself. You can drag and drop
-                    images into the upload area, or click to browse and select
-                    files.
+                    Upload photos from your computer, or tap the phone icon to
+                    scan a QR code and upload from your mobile device. Choose
+                    from your saved photos in the carousel.
                   </p>
                   <div className="mt-4 rounded-2xl border border-[#232f48] bg-[#111722] p-5">
                     <p className="text-sm text-gray-300 leading-relaxed">
@@ -673,12 +691,125 @@ export default function DocsPage() {
                     Step 7: View &amp; Compare Results
                   </h3>
                   <p className="mt-2 text-gray-300 leading-relaxed">
-                    Once generated, you can view the try-on full screen, compare
-                    with the original via slider, download, share, and browse
-                    your history.
+                    After generation, your try-on appears on the results page in
+                    a two-column grid. Tap any result to open the full-screen
+                    gallery, compare with your original photo via slider, and
+                    browse your recent history. Use{" "}
+                    <span className="text-white font-semibold">Try again</span>{" "}
+                    (shown briefly after a successful run) to regenerate on the
+                    same product.
                   </p>
                 </div>
               </div>
+            </section>
+
+            {/* Try-On History */}
+            <section
+              id="try-on-history"
+              className="scroll-mt-24 py-10 border-b border-[#232f48]"
+            >
+              <h2 className="text-2xl font-bold">Try-On History</h2>
+              <p className="mt-3 text-gray-300 leading-relaxed">
+                The extension keeps your{" "}
+                <span className="text-white font-semibold">
+                  five most recent
+                </span>{" "}
+                try-on results. Access them from:
+              </p>
+              <ul className="mt-4 list-disc pl-6 space-y-2 text-gray-300">
+                <li>
+                  The history button in the fitting room while uploading a photo
+                </li>
+                <li>
+                  <span className="text-white font-semibold">See Results</span>{" "}
+                  in the extension toolbar popup (when you have results)
+                </li>
+                <li>The results grid after each successful generation</li>
+              </ul>
+              <p className="mt-4 text-gray-400 text-sm leading-relaxed">
+                Older results roll off when you generate new ones beyond the
+                five-result limit. This is separate from the daily generation
+                limit below.
+              </p>
+            </section>
+
+            {/* Mobile App Waitlist */}
+            <section
+              id="mobile-app-waitlist"
+              className="scroll-mt-24 py-10 border-b border-[#232f48]"
+            >
+              <h2 className="text-2xl font-bold">Mobile App Waitlist</h2>
+              <p className="mt-3 text-gray-300 leading-relaxed">
+                We&apos;re building a TryB4Buy mobile app. Join the waitlist
+                inside the extension to get notified at launch:
+              </p>
+              <ul className="mt-4 list-disc pl-6 space-y-2 text-gray-300">
+                <li>
+                  <span className="text-white font-semibold">
+                    Join waitlist
+                  </span>{" "}
+                  in the toolbar menu (after &quot;How It Works&quot;)
+                </li>
+                <li>
+                  The bell icon on the product page row in the toolbar popup
+                </li>
+                <li>
+                  The waitlist banner on the try-on results page (after your
+                  first result loads)
+                </li>
+              </ul>
+              <p className="mt-4 text-gray-400 text-sm leading-relaxed">
+                Sign in with Google is required. Once joined, waitlist prompts
+                are hidden automatically.
+              </p>
+            </section>
+
+            {/* Extension Toolbar */}
+            <section
+              id="toolbar"
+              className="scroll-mt-24 py-10 border-b border-[#232f48]"
+            >
+              <h2 className="text-2xl font-bold">Extension Toolbar</h2>
+              <p className="mt-3 text-gray-300 leading-relaxed">
+                Click the TryB4Buy icon in your browser toolbar to open the
+                popup. Available actions include:
+              </p>
+              <ul className="mt-4 list-disc pl-6 space-y-2 text-gray-300">
+                <li>
+                  <span className="text-white font-semibold">
+                    Try on this item
+                  </span>{" "}
+                  — opens the fitting room on the current product page
+                </li>
+                <li>
+                  <span className="text-white font-semibold">See Results</span>{" "}
+                  — jump to your recent try-ons (when available)
+                </li>
+                <li>
+                  <span className="text-white font-semibold">
+                    Pause / Resume TryB4Buy
+                  </span>{" "}
+                  — temporarily hide the floating button
+                </li>
+                <li>
+                  <span className="text-white font-semibold">
+                    How It Works
+                  </span>{" "}
+                  — quick in-popup guide
+                </li>
+                <li>
+                  <span className="text-white font-semibold">
+                    Join waitlist
+                  </span>{" "}
+                  — sign up for the mobile app waitlist
+                </li>
+                <li>
+                  <span className="text-white font-semibold">
+                    Leave feedback
+                  </span>{" "}
+                  — opens the feedback form
+                </li>
+              </ul>
             </section>
 
             {/* Photo Requirements */}
@@ -804,7 +935,11 @@ export default function DocsPage() {
                     <p className="mt-3 text-sm text-gray-400 leading-relaxed">
                       This limit helps ensure fair usage and optimal performance
                       for all users. Each successful generation counts toward
-                      your limit.
+                      your limit. Your{" "}
+                      <span className="text-white font-semibold">
+                        five most recent results
+                      </span>{" "}
+                      are kept in history regardless of when they were created.
                     </p>
                   </div>
                 </div>
@@ -959,9 +1094,13 @@ export default function DocsPage() {
                 </p>
                 <ul className="list-disc pl-6 space-y-1 text-gray-300">
                   <li>
-                    Click the “Leave feedback” button in the toolbar popup
+                    Click &quot;Join waitlist&quot; in the toolbar popup menu
                   </li>
-                  <li>Click the “Leave feedback” button on the results page</li>
+                  <li>
+                    Click the &quot;Leave feedback&quot; button in the toolbar
+                    popup
+                  </li>
+                  <li>Click the &quot;Leave feedback&quot; link on the results page</li>
                 </ul>
               </div>
             </section>
@@ -975,12 +1114,12 @@ export default function DocsPage() {
               <div className="mt-6 grid grid-cols-1 gap-4">
                 <div className="rounded-2xl border border-[#232f48] bg-[#111722] p-6">
                   <h3 className="text-lg font-bold">Version Information</h3>
-                  <ul className="mt-3 list-disc pl-6 space-y-1 text-gray-300">
-                    <li>Version: 1.0.0</li>
-                    <li>Technology: AI-Powered Virtual Try-On</li>
-                    <li>Platform: Chrome Extension (Manifest V3)</li>
-                    <li>Last Updated: January 2025</li>
-                  </ul>
+                <ul className="mt-3 list-disc pl-6 space-y-1 text-gray-300">
+                  <li>Version: 1.0.3</li>
+                  <li>Technology: AI-Powered Virtual Try-On</li>
+                  <li>Platform: Chrome Extension (Manifest V3)</li>
+                  <li>Last Updated: June 2026</li>
+                </ul>
                 </div>
 
                 <div className="rounded-2xl border border-[#232f48] bg-[#111722] p-6">
@@ -988,12 +1127,13 @@ export default function DocsPage() {
                   <ul className="mt-3 list-disc pl-6 space-y-1 text-gray-300">
                     <li>Real-time virtual try-on using AI</li>
                     <li>Support for multiple clothing categories</li>
-                    <li>Compare mode to see before/after</li>
-                    <li>Download and share try-on results</li>
-                    <li>History of previous try-ons</li>
-                    <li>Works on major e-commerce platforms</li>
+                    <li>Full-screen gallery with before/after compare slider</li>
+                    <li>Last-five try-on history with results grid</li>
+                    <li>Phone photo upload via QR code</li>
+                    <li>Mobile app waitlist (toolbar + results page)</li>
+                    <li>Extension toolbar: pause, see results, feedback</li>
+                    <li>Works on 8 major e-commerce platforms</li>
                     <li>Secure Google OAuth authentication</li>
-                    <li>Fast and responsive interface</li>
                   </ul>
                 </div>
 
@@ -1074,6 +1214,23 @@ export default function DocsPage() {
             {/* Changelog */}
             <section id="changelog" className="scroll-mt-24 py-10">
               <h2 className="text-2xl font-bold">Changelog</h2>
+
+              <div className="mt-6 rounded-2xl border border-[#232f48] bg-[#111722] p-6">
+                <h3 className="text-lg font-bold">Version 1.0.3 (June 2026)</h3>
+                <ul className="mt-3 list-disc pl-6 space-y-1 text-gray-300">
+                  <li>Mobile app waitlist — join from toolbar menu or results page</li>
+                  <li>Try-on history stores your last 5 results (quantity-based)</li>
+                  <li>Redesigned results page with two-column grid</li>
+                  <li>Full-screen gallery with compare slider</li>
+                  <li>Phone photo upload via QR code</li>
+                  <li>
+                    Toolbar updates: See Results, Pause/Resume, Join waitlist
+                  </li>
+                  <li>Permanent try-on result storage for reliable history</li>
+                  <li>UX polish: loading states, try-again shortcut, font consistency</li>
+                </ul>
+              </div>
+
               <div className="mt-6 rounded-2xl border border-[#232f48] bg-[#111722] p-6">
                 <h3 className="text-lg font-bold">
                   Version 1.0.0 (January 2025)
@@ -1089,7 +1246,7 @@ export default function DocsPage() {
               </div>
 
               <footer className="mt-10 pt-6 border-t border-[#232f48] text-sm text-gray-500">
-                © 2025 TryB4Buy. All rights reserved.
+                © 2026 TryB4Buy. All rights reserved.
               </footer>
             </section>
           </article>

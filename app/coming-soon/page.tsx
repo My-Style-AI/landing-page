@@ -13,13 +13,10 @@ export default function ComingSoonPage() {
       accent: "amber",
       items: [
         {
-          title: "Virtual Wardrobe",
-          description: "Save and organize all your try-ons in one place.",
+          title: "TryB4Buy Mobile App",
+          description:
+            "Native app for on-the-go try-ons. Join the waitlist in the extension today.",
         },
-        /*  {
-          title: "Size Recommendation Engine",
-          description: "AI-powered size suggestions based on your measurements.",
-        }, */
         {
           title: "Style Matching",
           description: "Get outfit suggestions and build complete looks.",
@@ -40,13 +37,14 @@ export default function ComingSoonPage() {
       accent: "blue",
       items: [
         {
+          title: "TryB4Buy Mobile App",
+          description:
+            "Waitlist is live in the extension. Building the native iOS/Android experience next.",
+        },
+        {
           title: "Multi-product comparison",
           description:
             "Compare multiple products side-by-side to choose the best fit and look faster.",
-        },
-        {
-          title: "Enhanced History",
-          description: "Organize favorites and wishlists.",
         },
       ],
     },
